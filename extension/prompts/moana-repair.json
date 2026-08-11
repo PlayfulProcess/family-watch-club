@@ -1,0 +1,142 @@
+{
+  "id": "moana-repair",
+  "title": "The Repair Lens (rupture to restoration)",
+  "movie": "Moana",
+  "theme": "Repair Lens",
+  "version": 2,
+  "note": "Watches the movie through one question: how do broken things get mended? The arc: RUPTURE (something breaks) -> ARMOR (people protect the hurt place) -> TRUTH (someone sees what really happened) -> RETURN (someone goes back instead of away) -> RESTORATION (things grow back stronger, not just fixed). Timestamps approximate, tuned for Disney+.",
+  "points": [
+    {
+      "time": "2:30",
+      "title": "The rupture",
+      "kid": "Maui took something that wasn't his — and the whole world started to hurt. What does it feel like in YOUR body when something breaks between people?",
+      "quiz": {
+        "question": "What happens to the world after the heart is stolen?",
+        "options": [
+          {
+            "text": "Nothing — it was just one small stone",
+            "reply": "Watch the darkness spreading from island to island. Small thefts can make big cracks."
+          },
+          {
+            "text": "A darkness starts spreading, slowly, everywhere",
+            "right": true,
+            "reply": "YES. That's what a rupture does — it doesn't stay where it happened. It travels."
+          },
+          {
+            "text": "Only Maui gets hurt",
+            "reply": "Maui loses his hook and his sky-home — but the darkness reaches everyone, even people born a thousand years later."
+          }
+        ]
+      },
+      "parent": "This set follows one arc through the film: rupture, armor, truth, return, restoration. Every repair story starts with a break. Tonight's game: every time someone in the movie hides a hurt or mends one, name which step you're watching."
+    },
+    {
+      "time": "24:30",
+      "title": "Why Dad says no (the armor)",
+      "kid": "Moana's dad lost his best friend to the sea when he was young. How does that old hurt show up as rules today?",
+      "quiz": {
+        "question": "Why does Dad REALLY forbid going past the reef?",
+        "options": [
+          {
+            "text": "Because he's mean",
+            "reply": "It looks that way from outside. But his mom just told Moana the real story — an old, old hurt."
+          },
+          {
+            "text": "He's still scared from the night he lost his friend",
+            "right": true,
+            "reply": "YES. The rule is armor around an old wound. He's not protecting the island — he's protecting the boy he used to be."
+          },
+          {
+            "text": "He hates boats",
+            "reply": "Watch the end of the movie before you decide that one!"
+          }
+        ]
+      },
+      "parent": "Armor = protection that outlived its moment. Elsa's gloves and 'conceal it' rule are the same move; so is Rumi hiding her patterns. Useful distinction from our KPop Demon Hunters talks: inherited patterns come in two kinds — ones that protect (Honmoon-like) and ones that shame (Gwi-Ma-like). Dad's rule started as protection. The skill is telling which is which, not obeying or ignoring."
+    },
+    {
+      "time": "1:07:00",
+      "title": "Maui's wound",
+      "kid": "Maui's human parents let him go. The gods caught him and made him mighty. Which part of that story do you think he hears loudest at night?",
+      "quiz": {
+        "question": "Why does Maui need everyone to cheer for him?",
+        "options": [
+          {
+            "text": "Because he's just rude",
+            "reply": "That's the costume. He just told Moana what's underneath it — listen again."
+          },
+          {
+            "text": "The cheering covers a very old hurt",
+            "right": true,
+            "reply": "YES. He was thrown away once. Every trick since has been him earning the love he didn't get. The showing off is armor."
+          },
+          {
+            "text": "Heroes are required to brag",
+            "reply": "Moana becomes a hero in this same movie and never brags once. Bragging isn't the hero part."
+          }
+        ]
+      },
+      "parent": "The movie hands you Maui's rupture directly: abandoned as a baby, rescued by gods, and every deed since aimed at being loved for what he DOES. That's the lantern-vs-idol line: he performs to be adored (idol) instead of lighting the way (lantern) — the Saja Boys failure mode. His hook is the armor; watch what happens when it cracks."
+    },
+    {
+      "time": "1:14:00",
+      "title": "The hook cracks (armor wins a round)",
+      "kid": "Maui leaves when his hook might break. What is he really protecting — the hook, or something inside?",
+      "parent": "When armor is threatened, people run — that's this scene. Maui believes without the hook he's nothing, so risking the hook feels like risking his whole self. Worth remembering in real arguments: you can't reason with armor by attacking it. Speak to the hurt underneath instead. A small body-move for the pause: make two fists (that's armor), then slowly open them."
+    },
+    {
+      "time": "1:19:00",
+      "title": "The truth",
+      "kid": "Moana loses everything — the hook, Maui, almost her hope. Then she decides who she is. What are the pieces she counts up?",
+      "quiz": {
+        "question": "What brings Moana back from giving up?",
+        "options": [
+          {
+            "text": "The ocean gives her a magic weapon",
+            "reply": "The ocean actually took the heart BACK and left her alone. No gifts this time."
+          },
+          {
+            "text": "She remembers everyone and everything she loves, and chooses",
+            "right": true,
+            "reply": "YES. That's the truth step — seeing clearly what happened, what she loves, and what she still chooses. Repair starts there."
+          },
+          {
+            "text": "Maui comes back and saves her",
+            "reply": "He does come back — but only AFTER she's already chosen. Her truth came first."
+          }
+        ]
+      },
+      "parent": "Truth is the middle of every repair: not blame, just seeing clearly — this is what broke, this is what I love, this is what I choose now. Notice Gramma refuses to decide for her. Nobody can do the truth step for someone else."
+    },
+    {
+      "time": "1:29:00",
+      "title": "Return and restoration",
+      "kid": "Te Fiti gets her heart back — and then she gives Maui a NEW hook. Why give a gift to the one who stole from her?",
+      "quiz": {
+        "question": "What makes this a REAL repair, not just a fix?",
+        "options": [
+          {
+            "text": "The bad guy gets punished",
+            "reply": "Nobody gets punished! Watch what Te Fiti does instead of punishing..."
+          },
+          {
+            "text": "Everyone comes out stronger than before the break",
+            "right": true,
+            "reply": "YES. Te Fiti doesn't just get repaired — she repairs MAUI, hook and all. Real repair re-equips everybody. A mended place can be stronger than an unbroken one."
+          },
+          {
+            "text": "Everyone pretends it never happened",
+            "reply": "The opposite — Maui says out loud what he did. Repair needs the truth said, not erased."
+          }
+        ]
+      },
+      "parent": "The whole arc lands in two minutes: Moana RETURNS instead of running, the truth is spoken (Maui owns what he did), and restoration goes beyond rewind — Te Fiti restores the hook, repair that re-equips. Repair isn't pretending the break never happened; it's growing something new over the mended place."
+    },
+    {
+      "time": "1:36:00",
+      "title": "Repair across a generation",
+      "kid": "Dad chose fear for years and years. Then he chose the ocean again. Can grown-ups change too?",
+      "parent": "The quiet proof case of the master lesson: who you are is a choice, not a fixed thing. His rupture (losing his friend) built armor (the reef rule) that lasted decades — and he still got to choose again. Feeling like Te Kā is not being Te Kā; Te Kā is a weather, not a name. Good closing question for the couch: is there anything OUR family stopped doing after a hurt, that we might choose again?"
+    }
+  ]
+}

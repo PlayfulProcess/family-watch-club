@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      width: 320px;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #16213e;
+      color: #fff;
+      margin: 0;
+      padding: 16px;
+    }
+    h1 { font-size: 15px; margin: 0 0 12px; color: #e4c65b; }
+    label { display: flex; align-items: center; justify-content: space-between; margin: 10px 0; font-size: 13px; }
+    select, input[type="number"] {
+      background: #0f3460; color: #fff; border: 1px solid #3a4d7a; border-radius: 6px; padding: 4px 6px; font-size: 13px;
+    }
+    select { max-width: 170px; }
+    input[type="number"] { width: 60px; }
+    button {
+      width: 100%; margin-top: 10px; padding: 8px; border: none; border-radius: 8px;
+      background: #e4c65b; color: #16213e; font-weight: 700; font-size: 13px; cursor: pointer;
+    }
+    button.secondary { background: #0f3460; color: #9fd8ff; border: 1px solid #3a4d7a; }
+    #time-result { font-size: 13px; color: #9fd8ff; text-align: center; margin-top: 8px; min-height: 16px; user-select: all; }
+    .hint { font-size: 11px; color: #8fa3c8; margin-top: 12px; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <h1>Movie Companion</h1>
+
+  <label>Companion on
+    <input type="checkbox" id="enabled" />
+  </label>
+
+  <label>Movie
+    <select id="movie"></select>
+  </label>
+
+  <label>Theme
+    <span style="display:flex; align-items:center; gap:6px;">
+      <select id="theme"></select>
+      <a id="eye" href="#" target="_blank" title="View this set as a grammar on recursive.eco" style="display:none; text-decoration:none; font-size:15px;">&#128065;</a>
+    </span>
+  </label>
+
+  <label>ALL CAPS (early reader)
+    <input type="checkbox" id="caps" />
+  </label>
+
+  <label>Timing offset (seconds)
+    <input type="number" id="offset" step="1" />
+  </label>
+
+  <button id="grab">Grab current movie time</button>
+  <div id="time-result"></div>
+
+  <button class="secondary" id="import">Import prompt set (JSON)</button>
+  <input type="file" id="file" accept=".json" style="display:none" />
+  <button class="secondary" id="export">Export active set</button>
+
+  <div style="display:flex; gap:6px; margin-top:10px;">
+    <input type="text" id="url" placeholder="Grammar or prompt-set JSON URL"
+      style="flex:1; background:#0f3460; color:#fff; border:1px solid #3a4d7a; border-radius:6px; padding:4px 6px; font-size:12px;" />
+    <button class="secondary" id="fetch" style="width:auto; margin-top:0; padding:4px 10px;">Fetch</button>
+  </div>
+  <button class="secondary" id="refresh">&#8635; Refresh active set from source</button>
+
+  <input type="password" id="token" placeholder="recursive.eco API token (only for private grammars)"
+    style="width:100%; box-sizing:border-box; margin-top:8px; background:#0f3460; color:#fff; border:1px solid #3a4d7a; border-radius:6px; padding:4px 6px; font-size:12px;" />
+
+  <div class="hint">
+    Edit prompt JSONs any way you like and re-import. "Grab current movie time"
+    reads the playing video in the current tab — use it to find timestamps for
+    new pause points. You can also import a recursive.eco grammar JSON directly:
+    items with a metadata.time (like "58:40") become pause points.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

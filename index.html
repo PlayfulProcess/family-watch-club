@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Watch Club — The Harbor</title>
+<style>
+  :root { --deep:#16213e; --deeper:#0f3460; --gold:#e4c65b; --sky:#9fd8ff; --ink:#eef2fb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Avenir","Nunito","Segoe UI",system-ui,sans-serif;
+         background:linear-gradient(170deg,var(--deep) 0%,var(--deeper) 100%); color:var(--ink); min-height:100vh; }
+  .wrap { max-width:860px; margin:0 auto; padding:32px 20px 64px; }
+  header h1 { color:var(--gold); font-size:clamp(26px,5vw,40px); margin:0 0 6px; }
+  header p.tag { color:var(--sky); margin:0 0 4px; font-size:17px; }
+  .harbor-note { background:rgba(255,255,255,.07); border-left:3px solid var(--gold);
+                 border-radius:8px; padding:10px 14px; margin:18px 0 28px; font-size:14px; line-height:1.5; }
+  .harbor-note strong { color:var(--gold); }
+  h2 { color:var(--sky); font-size:20px; margin:34px 0 12px; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:16px; }
+  a.card { display:block; background:rgba(255,255,255,.06); border:1.5px solid rgba(228,198,91,.4);
+           border-radius:14px; padding:18px; color:var(--ink); text-decoration:none; transition:transform .12s; }
+  a.card:hover { transform:translateY(-3px); border-color:var(--gold); }
+  a.card .t { font-weight:800; font-size:17px; color:var(--gold); margin-bottom:6px; }
+  a.card .d { font-size:14px; line-height:1.45; color:var(--ink); }
+  a.card .b { display:inline-block; margin-top:10px; font-size:11px; letter-spacing:.1em;
+              text-transform:uppercase; color:var(--sky); }
+  footer { margin-top:48px; font-size:12.5px; color:#8fa3c8; line-height:1.6; }
+  footer a { color:var(--sky); }
+  .grownups { margin-top:40px; text-align:center; }
+  .grownups a { color:var(--sky); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>&#9875; Family Watch Club</h1>
+    <p class="tag">Old stories, good questions, and movie nights that turn into conversations.</p>
+  </header>
+
+  <div class="harbor-note">
+    <strong>You are in the Harbor.</strong> Everything on this page is self-contained:
+    no accounts, no forms, nothing to buy, and no links that sail off to the open internet.
+    Kids can explore here on their own. Grown-ups: your page is the
+    <a href="parents.html" style="color:var(--gold)">Launchpad</a>.
+  </div>
+
+  <h2>Books to read together</h2>
+  <div class="cards">
+    <a class="card" href="https://playfulprocess.github.io/recursive-kids-stories-club/books/legends-of-the-pacific/booklets/book.html">
+      <div class="t">Legends of the Pacific</div>
+      <div class="d">Eleven real legends of Maui, Hina, Pele, Rata and the great voyagers —
+        told for a thousand years, retold for read-aloud nights. With Wonder Together
+        questions and grown-up notes.</div>
+      <span class="b">48-page book</span>
+    </a>
+    <a class="card" href="bedtime-storybook.html">
+      <div class="t">Bedtime Storybook</div>
+      <div class="d">The first four Maui legends as a tap-through night-time book for
+        tablets. Big letters, dark theme, one gentle page at a time.</div>
+      <span class="b">Tablet bedtime</span>
+    </a>
+    <a class="card" href="https://playfulprocess.github.io/recursive-kids-stories-club/">
+      <div class="t">The Story Library</div>
+      <div class="d">More illustrated classics and read-along audiobooks from our
+        story club — all free, all yours to keep.</div>
+      <span class="b">Browse all books</span>
+    </a>
+  </div>
+
+  <div class="grownups">
+    <a href="parents.html">&#128640; Grown-ups: set up movie night on the Launchpad &rarr;</a>
+  </div>
+
+  <footer>
+    A noncommercial, family-made project. Traditional stories retold in our own words
+    (CC-BY-SA-4.0, <a href="https://github.com/PlayfulProcess">PlayfulProcess</a>).
+    We use no film dialogue, lyrics, or studio artwork — only our own questions and
+    commentary about the movies we love, and public-domain art with credits.
+    Built on <a href="https://recursive.eco">recursive.eco</a>.
+  </footer>
+</div>
+</body>
+</html>

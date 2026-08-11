@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Maui's Real Legends — Bedtime Storybook</title>
+<style>
+  :root { --gold: #e4c65b; --sky: #9fd8ff; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: radial-gradient(ellipse at 50% 120%, #0f3460 0%, #16213e 55%, #0a0f24 100%);
+    color: #eef2fb;
+    font-family: "Avenir", "Nunito", "Segoe UI", system-ui, sans-serif;
+    overflow: hidden;
+  }
+  #book { height: 100%; position: relative; }
+  .page {
+    position: absolute; inset: 0;
+    padding: 5vh 7vw 12vh;
+    overflow-y: auto;
+    display: none;
+    animation: fadein 0.6s ease;
+  }
+  .page.active { display: block; }
+  @keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; } }
+  .title-page { display: none; text-align: center; padding-top: 18vh; }
+  .title-page.active { display: block; }
+  h1 { color: var(--gold); font-size: clamp(28px, 6vw, 52px); letter-spacing: 0.06em; margin: 0 0 20px; }
+  h2 { color: var(--sky); font-size: clamp(22px, 4.5vw, 36px); margin: 0 0 18px; }
+  .subtitle { color: var(--sky); font-size: clamp(14px, 2.5vw, 20px); line-height: 1.6; }
+  .hint-line { color: #8fa3c8; margin-top: 10vh; font-size: 14px; }
+  .story p {
+    font-size: var(--storysize, clamp(19px, 3.2vw, 27px));
+    line-height: 1.65;
+    margin: 0 0 1em;
+  }
+  .question {
+    margin: 28px 0 18px;
+    padding: 16px 20px;
+    border: 2px solid var(--gold);
+    border-radius: 16px;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 25px);
+    line-height: 1.45;
+  }
+  .parent { background: rgba(255,255,255,0.07); border-radius: 10px; padding: 10px 14px; font-size: 15px; line-height: 1.5; margin-bottom: 30px; }
+  .parent summary { color: var(--gold); cursor: pointer; font-weight: 600; }
+  body.caps .story p, body.caps h2, body.caps .question { text-transform: uppercase; }
+  /* nav zones */
+  .zone { position: fixed; top: 0; bottom: 60px; width: 25vw; z-index: 5; }
+  .zone.left { left: 0; } .zone.right { right: 0; }
+  /* bottom bar */
+  #bar {
+    position: fixed; bottom: 0; left: 0; right: 0; height: 54px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 16px; z-index: 10;
+    background: rgba(10, 15, 36, 0.85);
+    font-size: 13px; color: #8fa3c8;
+  }
+  #bar button {
+    background: none; border: 1px solid #3a4d7a; color: var(--sky);
+    border-radius: 8px; padding: 5px 12px; font-size: 13px; cursor: pointer;
+  }
+  #dots span { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #3a4d7a; margin: 0 3px; }
+  #dots span.on { background: var(--gold); }
+  .stars { position: absolute; inset: 0; pointer-events: none; }
+  .stars::before, .stars::after {
+    content: ""; position: absolute; width: 3px; height: 3px; border-radius: 50%;
+    background: #fff; box-shadow: 12vw 8vh 0 #fff8, 30vw 15vh 0 #fff9, 55vw 6vh 0 #fffa,
+      70vw 18vh 0 #fff7, 85vw 10vh 0 #fff9, 20vw 25vh 0 #fff6, 45vw 22vh 0 #fff8,
+      78vw 30vh 0 #fff7, 8vw 40vh 0 #fff5, 92vw 45vh 0 #fff6;
+  }
+</style>
+</head>
+<body class="caps">
+<div id="book">
+
+<section class="page title-page">
+  <div class="stars"></div>
+  <h1>MAUI'S REAL LEGENDS</h1>
+  <p class="subtitle">STORIES OLDER THAN ANY MOVIE<br>TOLD ACROSS THE PACIFIC FOR MORE THAN A THOUSAND YEARS</p>
+  <p class="hint-line">TAP THE RIGHT SIDE TO BEGIN &rarr;</p>
+</section>
+
+
+<section class="page">
+  <h2>How Maui Fished Up the Islands</h2>
+  <div class="story"><p>Long, long before this boat, Maui was the youngest brother, and his brothers never let him come fishing. So one night he hid in the bottom of their canoe. When they were far out at sea, he popped up! Too far to turn back now.</p><p>Maui took out a magic fishhook made from his grandmother&#x27;s jawbone. He dipped it deep, deep, deep — and something ENORMOUS pulled back. He pulled and chanted, and up from the bottom of the sea came... land! A whole island, huge as a fish, dripping with seaweed.</p><p>Some say the islands of the Pacific are all fish that Maui pulled up from the deep. When you stand on an island, you are standing on Maui&#x27;s catch.</p></div>
+  <div class="question">If you could fish up your own island, what would be on it?</div>
+  <details class="parent"><summary>For the grown-up</summary><p>This is one of the most widespread Maui stories — in Aotearoa (New Zealand), the North Island is called Te Ika-a-Māui, &#x27;the fish of Maui.&#x27; The movie&#x27;s opening song hints at this.</p></details>
+</section>
+
+
+<section class="page">
+  <h2>How Maui Slowed the Sun</h2>
+  <div class="story"><p>In the old days, the Sun raced across the sky as fast as he pleased. Days were so short that people could not fish, could not plant, could not dry their clothes. Nights came before anyone was ready.</p><p>Maui said: ENOUGH. He and his brothers wove strong ropes from flax. They traveled east to the pit where the Sun sleeps, and they laid their ropes like a net around it. When the Sun rose up, roaring — they PULLED. The ropes held! Maui struck with his magic jawbone and would not let go until the Sun promised: I will walk slowly across the sky.</p><p>And that is why days are long enough to fish, to plant, to play, and to watch the sunset.</p></div>
+  <div class="question">What would you do with one extra-long day?</div>
+  <details class="parent"><summary>For the grown-up</summary><p>A story about bargaining with forces bigger than you — not defeating the Sun, just slowing it. Nice contrast with the movie&#x27;s Maui, who brags about this exact deed in &#x27;You&#x27;re Welcome.&#x27;</p></details>
+</section>
+
+
+<section class="page">
+  <h2>How Maui Brought Fire to People</h2>
+  <div class="story"><p>Once, all the cooking fires in the world went out. The only fire left belonged to Mahuika, the fire goddess, who kept flames burning in her fingernails.</p><p>Maui volunteered to go get fire — but really, he was curious. Mahuika kindly gave him one burning fingernail. Maui walked away... and dropped it in a stream! He came back: &#x27;I lost it. May I have another?&#x27; Again and again, until Mahuika had one nail left and knew she&#x27;d been tricked. FURIOUS, she threw her last fire after him, and the whole world began to burn!</p><p>Maui called the rain to save him. And Mahuika threw her last sparks into the trees to keep them safe. That is why, when people rub two sticks together, fire comes OUT of the wood. The fire has been hiding in the trees ever since.</p></div>
+  <div class="question">Maui&#x27;s trick almost burned the world. Was getting fire worth it?</div>
+  <details class="parent"><summary>For the grown-up</summary><p>A classic trickster story: curiosity and mischief tangled together, with a real gift at the end. Good for talking about how the same person can cause the problem AND the solution.</p></details>
+</section>
+
+
+<section class="page">
+  <h2>Why Maui Wanted to Live Forever</h2>
+  <div class="story"><p>Maui had done almost everything. Slowed the sun. Fished up islands. Stolen fire. But people still grew old, and that seemed to Maui like the one thing left to fix.</p><p>He wanted to defeat death itself so that no one would ever have to say goodbye. The old stories say he went to face the great goddess of the night, Hine-nui-te-pō, to try to win endless life for everyone.</p><p>He did not win. Even Maui, the greatest trickster, could not trick death. But people have told his stories for a thousand years and more — tonight, on this couch, we are telling them again. Maybe that was the way he got to live forever after all.</p></div>
+  <div class="question">Maui lives on in stories. What story about YOU should people tell in a thousand years?</div>
+  <details class="parent"><summary>For the grown-up</summary><p>The full version of this legend involves Maui&#x27;s death and is usually told to older kids — this retelling keeps the meaning (stories as immortality) without the scary details. It lands beautifully right before Gramma Tala&#x27;s spirit returns in the film.</p></details>
+</section>
+
+
+<section class="page title-page">
+  <div class="stars"></div>
+  <h1>THE END</h1>
+  <p class="subtitle">SLEEP WELL, VOYAGER.<br>THE OCEAN IS A FRIEND OF YOURS.</p>
+</section>
+
+</div>
+<div class="zone left" onclick="nav(-1)"></div>
+<div class="zone right" onclick="nav(1)"></div>
+<div id="bar">
+  <button onclick="document.body.classList.toggle('caps'); event.stopPropagation();">Aa / ALL CAPS</button>
+  <div id="dots"></div>
+  <button onclick="bigger(); event.stopPropagation();">A+</button>
+</div>
+<script>
+  var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
+  var idx = 0, size = 0;
+  var dots = document.getElementById('dots');
+  pages.forEach(function (_, i) { var d = document.createElement('span'); dots.appendChild(d); });
+  function show() {
+    pages.forEach(function (p, i) { p.classList.toggle('active', i === idx); });
+    Array.prototype.forEach.call(dots.children, function (d, i) { d.classList.toggle('on', i === idx); });
+    pages[idx].scrollTop = 0;
+  }
+  function nav(dir) { idx = Math.max(0, Math.min(pages.length - 1, idx + dir)); show(); }
+  function bigger() {
+    size = (size + 1) % 3;
+    var v = [null, '30px', '36px'][size];
+    document.documentElement.style.setProperty('--storysize', v || 'clamp(19px, 3.2vw, 27px)');
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') nav(1);
+    if (e.key === 'ArrowLeft') nav(-1);
+  });
+  show();
+</script>
+</body>
+</html>

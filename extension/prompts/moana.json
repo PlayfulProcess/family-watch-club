@@ -1,0 +1,232 @@
+{
+  "id": "moana",
+  "title": "Moana",
+  "movie": "Moana",
+  "theme": "Discussion",
+  "version": 3,
+  "note": "Timestamps are approximate and tuned for the Disney+ version (no ads). Use the timing nudge buttons or edit this file if your version differs.",
+  "points": [
+    {
+      "time": "2:30",
+      "title": "Gramma Tala's story",
+      "kid": "Who stole the heart of Te Fiti? Why do you think he took it?",
+      "quiz": {
+        "question": "Who is Maui, really?",
+        "options": [
+          {
+            "text": "A character invented for this movie",
+            "reply": "Nope! Maui is more than a thousand years old. The movie borrowed him from Polynesian storytellers."
+          },
+          {
+            "text": "A real legend told across the Pacific for over 1000 years",
+            "right": true,
+            "reply": "YES! Families told Maui stories from Hawaii to New Zealand long before movies existed. Tonight you're part of that chain."
+          },
+          {
+            "text": "A monster who hates people",
+            "reply": "The opposite! In the old stories Maui mostly HELPS people — he just causes trouble while doing it."
+          }
+        ]
+      },
+      "parent": "Maui is a real hero of Polynesian oral tradition — he fished islands up from the sea, slowed the sun, and brought fire to people. Disney borrowed him. If your kid likes him, the 'Maui's Real Legends' set in this extension tells four of the authentic stories during the quiet stretches of the film."
+    },
+    {
+      "time": "8:30",
+      "title": "The ocean chooses Moana",
+      "kid": "The ocean picked Moana. What do you think it saw in her?",
+      "quiz": {
+        "question": "When does the ocean choose her?",
+        "options": [
+          {
+            "text": "When she proves she's the strongest",
+            "reply": "She's tiny! It wasn't muscles."
+          },
+          {
+            "text": "Right after she protects a baby turtle",
+            "right": true,
+            "reply": "YES! First she helps someone smaller than her — THEN the ocean opens. Being chosen followed being kind."
+          },
+          {
+            "text": "Because she's the chief's daughter",
+            "reply": "The ocean doesn't care about titles. It watched what she DID."
+          }
+        ]
+      },
+      "parent": "Worth naming the order of events: kindness first, magic second. And ask what it feels like to be chosen for something — and whether you get to choose back. Moana spends the whole movie deciding whether to accept what chose her."
+    },
+    {
+      "time": "13:00",
+      "title": "Where You Are",
+      "kid": "Her dad says stay. Her heart says go. What would you do?",
+      "quiz": {
+        "question": "Is her dad's message wrong?",
+        "options": [
+          {
+            "text": "Yes — he's just mean",
+            "reply": "Look closer. He loves her and the island IS beautiful. Something else is hiding under his rule..."
+          },
+          {
+            "text": "It's love AND fear mixed together",
+            "right": true,
+            "reply": "YES. He's protecting her — but he's also hiding something scary that happened to HIM long ago. Love and fear can wear the same clothes."
+          },
+          {
+            "text": "No — leaving is always bad",
+            "reply": "The movie will have a surprise about that. Watch what her ancestors used to do!"
+          }
+        ]
+      },
+      "parent": "Same tension as Frozen and KPop Demon Hunters: a truth inside that others ask you to hide — and in all three movies, the hidden truth comes out as a song. Tui's rule is Elsa's 'conceal' rule in another costume. Keep an eye on WHY he's afraid; the movie tells you later."
+    },
+    {
+      "time": "31:00",
+      "title": "We Know the Way",
+      "kid": "Moana's ancestors were voyagers! Why did they stop sailing?",
+      "quiz": {
+        "question": "How did real voyagers find tiny islands with no maps and no instruments?",
+        "options": [
+          {
+            "text": "Stars, waves, and birds",
+            "right": true,
+            "reply": "YES! They memorized star paths, felt wave patterns bouncing off unseen islands through the hull, and followed birds flying home at dusk. Greatest navigators on Earth."
+          },
+          {
+            "text": "Secret maps hidden in the canoes",
+            "reply": "No paper maps at all! The map was in their bodies and memories — star paths, wave feelings, bird flights."
+          },
+          {
+            "text": "Pure luck",
+            "reply": "Thousands of islands found by luck? No way — it was skill so deep it looked like magic."
+          }
+        ]
+      },
+      "parent": "Real history: Polynesians settled the Pacific centuries before Europeans could cross an ocean, navigating by star paths, swell patterns, and birds. There really was a long pause in voyaging that historians still debate — the movie turns that real mystery into its story. Wayfinders 'listened' with their whole bodies; chapter 10 of our Legends book is about exactly this."
+    },
+    {
+      "time": "36:00",
+      "title": "Gramma Tala and the ray",
+      "kid": "Gramma says she'll come back as a ray. Where do you think she goes?",
+      "parent": "In many Pacific traditions, ancestors stay present in animals, stars, and the sea — an aumakua in Hawaii is an ancestor who watches over the family as an animal. If loss is a sensitive topic right now, this can be a short pause — or the biggest one. No quiz on this card on purpose."
+    },
+    {
+      "time": "44:00",
+      "title": "You're Welcome",
+      "kid": "Maui says he did everything for humans. Do you believe him?",
+      "quiz": {
+        "question": "In the old stories, why did Maui do his great deeds?",
+        "options": [
+          {
+            "text": "Only to become famous",
+            "reply": "Partly! He LOVES applause. But look at what the deeds actually did — longer days, islands, fire. Somebody benefited..."
+          },
+          {
+            "text": "To help people AND to show off — both at once",
+            "right": true,
+            "reply": "YES! That's what a trickster is: the gift and the mischief tangled together. Almost every culture on Earth has one."
+          },
+          {
+            "text": "Because the gods ordered him to",
+            "reply": "Nobody orders Maui around — that's his whole problem, and his whole charm."
+          }
+        ]
+      },
+      "parent": "Tricksters exist in almost every tradition — Anansi, Loki, Coyote, Maui. They break rules and the world changes, usually for better AND worse at once. Good question for later: is movie-Maui's bragging strength, or armor? The movie answers at the 1:07 mark."
+    },
+    {
+      "time": "1:03:00",
+      "title": "Shiny",
+      "kid": "Tamatoa loves being shiny outside. What makes someone shiny INSIDE?",
+      "quiz": {
+        "question": "Tamatoa's shell is covered in treasure. What's he missing?",
+        "options": [
+          {
+            "text": "Even more treasure",
+            "reply": "He has a mountain of it and he's still not happy. More shiny won't fix it..."
+          },
+          {
+            "text": "Someone who likes him without the sparkle",
+            "right": true,
+            "reply": "YES. All that glitter is for getting looked at — but being looked at isn't the same as being loved."
+          },
+          {
+            "text": "A bigger cave",
+            "reply": "His cave is huge! The empty part is somewhere else."
+          }
+        ]
+      },
+      "parent": "A gentle mirror of the movie's big question — worth connecting to how the Huntrix girls perform sparkly on stage while hiding what's underneath. Shine you wear to be adored is the idol trap; shine that lights the way for others is the lantern. Tamatoa chose idol."
+    },
+    {
+      "time": "1:17:00",
+      "title": "Song of the ancestors",
+      "kid": "Moana asks: who am I? What's YOUR answer about you?",
+      "quiz": {
+        "question": "When Moana asks who she is, who gives her the answer?",
+        "options": [
+          {
+            "text": "Gramma Tala tells her",
+            "reply": "Close — but listen again. Gramma only asks her the QUESTION. She refuses to answer it for her."
+          },
+          {
+            "text": "Maui comes back and tells her",
+            "reply": "Maui is gone at this moment. She's completely alone — that's the point."
+          },
+          {
+            "text": "She builds the answer herself, piece by piece",
+            "right": true,
+            "reply": "YES! She counts up everything she loves and everything she's done, and decides. Nobody can do that part for you."
+          }
+        ]
+      },
+      "parent": "The hinge of the whole movie. Nobody rescues Moana here; Gramma's spirit asks the question and waits. Moana assembles her identity out loud — the island girl, the voyager's descendant, the one who came this far. That's the master lesson: who you are is a choice you build, not a label you're handed."
+    },
+    {
+      "time": "1:28:00",
+      "title": "Know Who You Are",
+      "kid": "Te Kā and Te Fiti are the same! How did Moana know?",
+      "quiz": {
+        "question": "Why does Moana walk TOWARD the fire monster instead of running?",
+        "options": [
+          {
+            "text": "She has a secret weapon",
+            "reply": "No weapon at all. Her hands are empty. What she has is something she SAW..."
+          },
+          {
+            "text": "She saw that the monster is someone hurt",
+            "right": true,
+            "reply": "YES. The spiral on Te Kā's chest matches the stolen heart. The scariest thing in the movie is a goddess with her heart taken away."
+          },
+          {
+            "text": "The ocean forced her to",
+            "reply": "The ocean actually PARTS to let Te Kā come to her — it trusts Moana's choice."
+          }
+        ]
+      },
+      "parent": "The movie's deepest move: the monster is the goddess with her heart stolen. Rumi's demon patterns and Elsa's ice storm work the same way — the scary thing is a hurt thing. Our family line for this: feeling like Te Kā is not BEING Te Kā. Te Kā is a weather, not a name."
+    },
+    {
+      "time": "1:36:00",
+      "title": "The end — voyagers again",
+      "kid": "What did Moana give back to her island? What would you explore first?",
+      "quiz": {
+        "question": "What does Moana's father do at the end?",
+        "options": [
+          {
+            "text": "Makes a new rule: nobody leaves",
+            "reply": "That was the OLD him. Look at where he's standing now — on a boat!"
+          },
+          {
+            "text": "Chooses voyaging again",
+            "right": true,
+            "reply": "YES! The same man who chose fear for years chooses the ocean again. Grown-ups can change too. Who you are is a choice — and you can choose again."
+          },
+          {
+            "text": "Moves away to another island alone",
+            "reply": "No — the whole village goes together. Voyaging was never about leaving people behind."
+          }
+        ]
+      },
+      "parent": "Close the loop: Moana didn't leave her people OR stay put — she brought the voyaging back home. And her father is the proof case of the master lesson: he chose fear after a loss, and at the end he chooses again. Ask what your family's 'old way worth restarting' might be."
+    }
+  ]
+}

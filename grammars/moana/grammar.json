@@ -1,0 +1,323 @@
+{
+  "name": "Moana — Movie Companion",
+  "recursive_eco_id": "2a0b8085-cdd3-4a0d-b7d7-8c07d880a366",
+  "description": "Pause-and-talk cards for family movie night with Moana (2016). Each item is one pause point: a Wonder Together question for the kid, a For the Grown-up note with the mythology or psychology behind the scene, and an optional tap-quiz (metadata.quiz). metadata.time is where it fires in the film (Disney+ timing, no ads); metadata.lens is the theme — \"discussion\" (first watch, mythology + feelings) or \"repair\" (second watch: rupture → armor → truth → return → restoration). Our own commentary and questions only — no film dialogue, lyrics, or studio artwork. Exported/imported by the Movie Companion browser extension.",
+  "grammar_type": "custom",
+  "tags": ["movie-companion", "moana", "family-movie-night", "emotional-intelligence", "mythology", "repair", "parents"],
+  "attribution": {
+    "license": "Original questions and commentary, CC-BY-SA-4.0, by PlayfulProcess.",
+    "note": "Commentary about the film Moana (Walt Disney Animation Studios, 2016). Contains no film dialogue, lyrics, or studio artwork. Scene titles reference song/scene names for navigation only. References to real Polynesian tradition draw on public-domain sources incl. W. D. Westervelt, Legends of Ma-ui (1910)."
+  },
+  "items": [
+    {
+      "name": "Gramma Tala's story",
+      "category": "discussion",
+      "keywords": ["maui", "legend", "opening"],
+      "sections": {
+        "Wonder Together": "Who stole the heart of Te Fiti? Why do you think he took it?",
+        "For the Grown-up": "Maui is a real hero of Polynesian oral tradition — he fished islands up from the sea, slowed the sun, and brought fire to people. Disney borrowed him. If your kid likes him, the 'Maui's Real Legends' set in the extension tells four of the authentic stories during the quiet stretches of the film."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "2:30",
+        "quiz": {
+          "question": "Who is Maui, really?",
+          "options": [
+            { "text": "A character invented for this movie", "reply": "Nope! Maui is more than a thousand years old. The movie borrowed him from Polynesian storytellers." },
+            { "text": "A real legend told across the Pacific for over 1000 years", "right": true, "reply": "YES! Families told Maui stories from Hawaii to New Zealand long before movies existed. Tonight you're part of that chain." },
+            { "text": "A monster who hates people", "reply": "The opposite! In the old stories Maui mostly HELPS people — he just causes trouble while doing it." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "The ocean chooses Moana",
+      "category": "discussion",
+      "keywords": ["kindness", "chosen"],
+      "sections": {
+        "Wonder Together": "The ocean picked Moana. What do you think it saw in her?",
+        "For the Grown-up": "Worth naming the order of events: kindness first, magic second. And ask what it feels like to be chosen for something — and whether you get to choose back. Moana spends the whole movie deciding whether to accept what chose her."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "8:30",
+        "quiz": {
+          "question": "When does the ocean choose her?",
+          "options": [
+            { "text": "When she proves she's the strongest", "reply": "She's tiny! It wasn't muscles." },
+            { "text": "Right after she protects a baby turtle", "right": true, "reply": "YES! First she helps someone smaller than her — THEN the ocean opens. Being chosen followed being kind." },
+            { "text": "Because she's the chief's daughter", "reply": "The ocean doesn't care about titles. It watched what she DID." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Where You Are",
+      "category": "discussion",
+      "keywords": ["stay", "fear", "love"],
+      "sections": {
+        "Wonder Together": "Her dad says stay. Her heart says go. What would you do?",
+        "For the Grown-up": "Same tension as Frozen and KPop Demon Hunters: a truth inside that others ask you to hide — and in all three movies, the hidden truth comes out as a song. Tui's rule is Elsa's 'conceal' rule in another costume. Keep an eye on WHY he's afraid; the movie tells you later."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "13:00",
+        "quiz": {
+          "question": "Is her dad's message wrong?",
+          "options": [
+            { "text": "Yes — he's just mean", "reply": "Look closer. He loves her and the island IS beautiful. Something else is hiding under his rule..." },
+            { "text": "It's love AND fear mixed together", "right": true, "reply": "YES. He's protecting her — but he's also hiding something scary that happened to HIM long ago. Love and fear can wear the same clothes." },
+            { "text": "No — leaving is always bad", "reply": "The movie will have a surprise about that. Watch what her ancestors used to do!" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "We Know the Way",
+      "category": "discussion",
+      "keywords": ["wayfinding", "ancestors", "navigation"],
+      "sections": {
+        "Wonder Together": "Moana's ancestors were voyagers! Why did they stop sailing?",
+        "For the Grown-up": "Real history: Polynesians settled the Pacific centuries before Europeans could cross an ocean, navigating by star paths, swell patterns, and birds. There really was a long pause in voyaging that historians still debate — the movie turns that real mystery into its story. Wayfinders 'listened' with their whole bodies; chapter 10 of our Legends book is about exactly this."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "31:00",
+        "quiz": {
+          "question": "How did real voyagers find tiny islands with no maps and no instruments?",
+          "options": [
+            { "text": "Stars, waves, and birds", "right": true, "reply": "YES! They memorized star paths, felt wave patterns bouncing off unseen islands through the hull, and followed birds flying home at dusk. Greatest navigators on Earth." },
+            { "text": "Secret maps hidden in the canoes", "reply": "No paper maps at all! The map was in their bodies and memories — star paths, wave feelings, bird flights." },
+            { "text": "Pure luck", "reply": "Thousands of islands found by luck? No way — it was skill so deep it looked like magic." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Gramma Tala and the ray",
+      "category": "discussion",
+      "keywords": ["loss", "ancestors", "aumakua"],
+      "sections": {
+        "Wonder Together": "Gramma says she'll come back as a ray. Where do you think she goes?",
+        "For the Grown-up": "In many Pacific traditions, ancestors stay present in animals, stars, and the sea — an aumakua in Hawaii is an ancestor who watches over the family as an animal. If loss is a sensitive topic right now, this can be a short pause — or the biggest one. No quiz on this card on purpose."
+      },
+      "metadata": { "movie": "Moana", "lens": "discussion", "time": "36:00" }
+    },
+    {
+      "name": "You're Welcome",
+      "category": "discussion",
+      "keywords": ["trickster", "maui"],
+      "sections": {
+        "Wonder Together": "Maui says he did everything for humans. Do you believe him?",
+        "For the Grown-up": "Tricksters exist in almost every tradition — Anansi, Loki, Coyote, Maui. They break rules and the world changes, usually for better AND worse at once. Good question for later: is movie-Maui's bragging strength, or armor? The movie answers at the 1:07 mark."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "44:00",
+        "quiz": {
+          "question": "In the old stories, why did Maui do his great deeds?",
+          "options": [
+            { "text": "Only to become famous", "reply": "Partly! He LOVES applause. But look at what the deeds actually did — longer days, islands, fire. Somebody benefited..." },
+            { "text": "To help people AND to show off — both at once", "right": true, "reply": "YES! That's what a trickster is: the gift and the mischief tangled together. Almost every culture on Earth has one." },
+            { "text": "Because the gods ordered him to", "reply": "Nobody orders Maui around — that's his whole problem, and his whole charm." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Shiny",
+      "category": "discussion",
+      "keywords": ["tamatoa", "idol", "lantern"],
+      "sections": {
+        "Wonder Together": "Tamatoa loves being shiny outside. What makes someone shiny INSIDE?",
+        "For the Grown-up": "A gentle mirror of the movie's big question — worth connecting to how the Huntrix girls perform sparkly on stage while hiding what's underneath. Shine you wear to be adored is the idol trap; shine that lights the way for others is the lantern. Tamatoa chose idol."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "1:03:00",
+        "quiz": {
+          "question": "Tamatoa's shell is covered in treasure. What's he missing?",
+          "options": [
+            { "text": "Even more treasure", "reply": "He has a mountain of it and he's still not happy. More shiny won't fix it..." },
+            { "text": "Someone who likes him without the sparkle", "right": true, "reply": "YES. All that glitter is for getting looked at — but being looked at isn't the same as being loved." },
+            { "text": "A bigger cave", "reply": "His cave is huge! The empty part is somewhere else." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Song of the ancestors",
+      "category": "discussion",
+      "keywords": ["identity", "choice"],
+      "sections": {
+        "Wonder Together": "Moana asks: who am I? What's YOUR answer about you?",
+        "For the Grown-up": "The hinge of the whole movie. Nobody rescues Moana here; Gramma's spirit asks the question and waits. Moana assembles her identity out loud — the island girl, the voyager's descendant, the one who came this far. That's the master lesson: who you are is a choice you build, not a label you're handed."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "1:17:00",
+        "quiz": {
+          "question": "When Moana asks who she is, who gives her the answer?",
+          "options": [
+            { "text": "Gramma Tala tells her", "reply": "Close — but listen again. Gramma only asks her the QUESTION. She refuses to answer it for her." },
+            { "text": "Maui comes back and tells her", "reply": "Maui is gone at this moment. She's completely alone — that's the point." },
+            { "text": "She builds the answer herself, piece by piece", "right": true, "reply": "YES! She counts up everything she loves and everything she's done, and decides. Nobody can do that part for you." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Know Who You Are",
+      "category": "discussion",
+      "keywords": ["te ka", "te fiti", "hurt"],
+      "sections": {
+        "Wonder Together": "Te Kā and Te Fiti are the same! How did Moana know?",
+        "For the Grown-up": "The movie's deepest move: the monster is the goddess with her heart stolen. Rumi's demon patterns and Elsa's ice storm work the same way — the scary thing is a hurt thing. Our family line for this: feeling like Te Kā is not BEING Te Kā. Te Kā is a weather, not a name."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "1:28:00",
+        "quiz": {
+          "question": "Why does Moana walk TOWARD the fire monster instead of running?",
+          "options": [
+            { "text": "She has a secret weapon", "reply": "No weapon at all. Her hands are empty. What she has is something she SAW..." },
+            { "text": "She saw that the monster is someone hurt", "right": true, "reply": "YES. The spiral on Te Kā's chest matches the stolen heart. The scariest thing in the movie is a goddess with her heart taken away." },
+            { "text": "The ocean forced her to", "reply": "The ocean actually PARTS to let Te Kā come to her — it trusts Moana's choice." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "The end — voyagers again",
+      "category": "discussion",
+      "keywords": ["father", "change", "voyaging"],
+      "sections": {
+        "Wonder Together": "What did Moana give back to her island? What would you explore first?",
+        "For the Grown-up": "Close the loop: Moana didn't leave her people OR stay put — she brought the voyaging back home. And her father is the proof case of the master lesson: he chose fear after a loss, and at the end he chooses again. Ask what your family's 'old way worth restarting' might be."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "discussion", "time": "1:36:00",
+        "quiz": {
+          "question": "What does Moana's father do at the end?",
+          "options": [
+            { "text": "Makes a new rule: nobody leaves", "reply": "That was the OLD him. Look at where he's standing now — on a boat!" },
+            { "text": "Chooses voyaging again", "right": true, "reply": "YES! The same man who chose fear for years chooses the ocean again. Grown-ups can change too. Who you are is a choice — and you can choose again." },
+            { "text": "Moves away to another island alone", "reply": "No — the whole village goes together. Voyaging was never about leaving people behind." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "The rupture",
+      "category": "repair",
+      "keywords": ["rupture", "heart", "darkness"],
+      "sections": {
+        "Wonder Together": "Maui took something that wasn't his — and the whole world started to hurt. What does it feel like in YOUR body when something breaks between people?",
+        "For the Grown-up": "This set follows one arc through the film: rupture, armor, truth, return, restoration. Every repair story starts with a break. Tonight's game: every time someone in the movie hides a hurt or mends one, name which step you're watching."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "repair", "time": "2:30",
+        "quiz": {
+          "question": "What happens to the world after the heart is stolen?",
+          "options": [
+            { "text": "Nothing — it was just one small stone", "reply": "Watch the darkness spreading from island to island. Small thefts can make big cracks." },
+            { "text": "A darkness starts spreading, slowly, everywhere", "right": true, "reply": "YES. That's what a rupture does — it doesn't stay where it happened. It travels." },
+            { "text": "Only Maui gets hurt", "reply": "Maui loses his hook and his sky-home — but the darkness reaches everyone, even people born a thousand years later." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Why Dad says no (the armor)",
+      "category": "repair",
+      "keywords": ["armor", "fear", "rules"],
+      "sections": {
+        "Wonder Together": "Moana's dad lost his best friend to the sea when he was young. How does that old hurt show up as rules today?",
+        "For the Grown-up": "Armor = protection that outlived its moment. Elsa's gloves and 'conceal it' rule are the same move; so is Rumi hiding her patterns. Useful distinction from our KPop Demon Hunters talks: inherited patterns come in two kinds — ones that protect (Honmoon-like) and ones that shame (Gwi-Ma-like). Dad's rule started as protection. The skill is telling which is which, not obeying or ignoring."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "repair", "time": "24:30",
+        "quiz": {
+          "question": "Why does Dad REALLY forbid going past the reef?",
+          "options": [
+            { "text": "Because he's mean", "reply": "It looks that way from outside. But his mom just told Moana the real story — an old, old hurt." },
+            { "text": "He's still scared from the night he lost his friend", "right": true, "reply": "YES. The rule is armor around an old wound. He's not protecting the island — he's protecting the boy he used to be." },
+            { "text": "He hates boats", "reply": "Watch the end of the movie before you decide that one!" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Maui's wound",
+      "category": "repair",
+      "keywords": ["abandonment", "performance", "idol"],
+      "sections": {
+        "Wonder Together": "Maui's human parents let him go. The gods caught him and made him mighty. Which part of that story do you think he hears loudest at night?",
+        "For the Grown-up": "The movie hands you Maui's rupture directly: abandoned as a baby, rescued by gods, and every deed since aimed at being loved for what he DOES. That's the lantern-vs-idol line: he performs to be adored (idol) instead of lighting the way (lantern) — the Saja Boys failure mode. His hook is the armor; watch what happens when it cracks."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "repair", "time": "1:07:00",
+        "quiz": {
+          "question": "Why does Maui need everyone to cheer for him?",
+          "options": [
+            { "text": "Because he's just rude", "reply": "That's the costume. He just told Moana what's underneath it — listen again." },
+            { "text": "The cheering covers a very old hurt", "right": true, "reply": "YES. He was thrown away once. Every trick since has been him earning the love he didn't get. The showing off is armor." },
+            { "text": "Heroes are required to brag", "reply": "Moana becomes a hero in this same movie and never brags once. Bragging isn't the hero part." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "The hook cracks (armor wins a round)",
+      "category": "repair",
+      "keywords": ["armor", "flight", "somatics"],
+      "sections": {
+        "Wonder Together": "Maui leaves when his hook might break. What is he really protecting — the hook, or something inside?",
+        "For the Grown-up": "When armor is threatened, people run — that's this scene. Maui believes without the hook he's nothing, so risking the hook feels like risking his whole self. Worth remembering in real arguments: you can't reason with armor by attacking it. Speak to the hurt underneath instead. A small body-move for the pause: make two fists (that's armor), then slowly open them."
+      },
+      "metadata": { "movie": "Moana", "lens": "repair", "time": "1:14:00" }
+    },
+    {
+      "name": "The truth",
+      "category": "repair",
+      "keywords": ["truth", "identity", "choice"],
+      "sections": {
+        "Wonder Together": "Moana loses everything — the hook, Maui, almost her hope. Then she decides who she is. What are the pieces she counts up?",
+        "For the Grown-up": "Truth is the middle of every repair: not blame, just seeing clearly — this is what broke, this is what I love, this is what I choose now. Notice Gramma refuses to decide for her. Nobody can do the truth step for someone else."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "repair", "time": "1:19:00",
+        "quiz": {
+          "question": "What brings Moana back from giving up?",
+          "options": [
+            { "text": "The ocean gives her a magic weapon", "reply": "The ocean actually took the heart BACK and left her alone. No gifts this time." },
+            { "text": "She remembers everyone and everything she loves, and chooses", "right": true, "reply": "YES. That's the truth step — seeing clearly what happened, what she loves, and what she still chooses. Repair starts there." },
+            { "text": "Maui comes back and saves her", "reply": "He does come back — but only AFTER she's already chosen. Her truth came first." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Return and restoration",
+      "category": "repair",
+      "keywords": ["restoration", "forgiveness", "re-equip"],
+      "sections": {
+        "Wonder Together": "Te Fiti gets her heart back — and then she gives Maui a NEW hook. Why give a gift to the one who stole from her?",
+        "For the Grown-up": "The whole arc lands in two minutes: Moana RETURNS instead of running, the truth is spoken (Maui owns what he did), and restoration goes beyond rewind — Te Fiti restores the hook, repair that re-equips. Repair isn't pretending the break never happened; it's growing something new over the mended place."
+      },
+      "metadata": {
+        "movie": "Moana", "lens": "repair", "time": "1:29:00",
+        "quiz": {
+          "question": "What makes this a REAL repair, not just a fix?",
+          "options": [
+            { "text": "The bad guy gets punished", "reply": "Nobody gets punished! Watch what Te Fiti does instead of punishing..." },
+            { "text": "Everyone comes out stronger than before the break", "right": true, "reply": "YES. Te Fiti doesn't just get repaired — she repairs MAUI, hook and all. Real repair re-equips everybody. A mended place can be stronger than an unbroken one." },
+            { "text": "Everyone pretends it never happened", "reply": "The opposite — Maui says out loud what he did. Repair needs the truth said, not erased." }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Repair across a generation",
+      "category": "repair",
+      "keywords": ["father", "change", "master-lesson"],
+      "sections": {
+        "Wonder Together": "Dad chose fear for years and years. Then he chose the ocean again. Can grown-ups change too?",
+        "For the Grown-up": "The quiet proof case of the master lesson: who you are is a choice, not a fixed thing. His rupture (losing his friend) built armor (the reef rule) that lasted decades — and he still got to choose again. Feeling like Te Kā is not being Te Kā; Te Kā is a weather, not a name. Good closing question for the couch: is there anything OUR family stopped doing after a hurt, that we might choose again?"
+      },
+      "metadata": { "movie": "Moana", "lens": "repair", "time": "1:36:00" }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Watch Club — The Launchpad (for grown-ups)</title>
+<style>
+  :root { --deep:#16213e; --deeper:#0f3460; --gold:#e4c65b; --sky:#9fd8ff; --ink:#eef2fb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Avenir","Nunito","Segoe UI",system-ui,sans-serif;
+         background:linear-gradient(170deg,#1c1633 0%,#34275e 100%); color:var(--ink); min-height:100vh; }
+  .wrap { max-width:860px; margin:0 auto; padding:32px 20px 64px; }
+  header h1 { color:var(--gold); font-size:clamp(24px,5vw,36px); margin:0 0 6px; }
+  .zone-note { background:rgba(255,255,255,.08); border-left:3px solid #c77dff;
+               border-radius:8px; padding:10px 14px; margin:18px 0 26px; font-size:14px; line-height:1.5; }
+  .zone-note strong { color:#c77dff; }
+  h2 { color:var(--sky); font-size:19px; margin:32px 0 10px; }
+  section { background:rgba(255,255,255,.05); border-radius:14px; padding:18px 20px; margin-bottom:18px; }
+  ol { margin:8px 0 0; padding-left:22px; font-size:15px; line-height:1.7; }
+  a { color:var(--sky); }
+  .btn { display:inline-block; background:var(--gold); color:var(--deep); font-weight:800;
+         padding:9px 20px; border-radius:999px; text-decoration:none; font-size:15px; margin-top:8px; }
+  .ext-link { font-size:12.5px; color:#8fa3c8; margin-top:6px; }
+  .movie-row { display:flex; gap:8px; align-items:center; margin:8px 0; flex-wrap:wrap; }
+  .movie-row .name { min-width:120px; font-weight:700; color:var(--gold); }
+  .movie-row input { flex:1; min-width:200px; background:rgba(0,0,0,.3); color:var(--ink);
+                     border:1px solid #5a4d8a; border-radius:8px; padding:8px 10px; font-size:13px; }
+  .movie-row button { background:var(--gold); color:var(--deep); border:none; border-radius:8px;
+                      padding:8px 16px; font-weight:800; cursor:pointer; font-size:13px; }
+  .hint { font-size:12.5px; color:#a99fd0; line-height:1.5; margin-top:8px; }
+  .out { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#c77dff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><h1>&#128640; The Launchpad <span style="font-size:15px;color:#a99fd0">(for grown-ups)</span></h1></header>
+
+  <div class="zone-note">
+    <strong>This page leaves the Harbor.</strong> Links here go out to the open internet —
+    streaming sites, GitHub, recursive.eco. Set things up here, then send the kids back to
+    the <a href="index.html" style="color:var(--gold)">Harbor</a>, which stays self-contained.
+  </div>
+
+  <section>
+    <h2>1 &middot; The Movie Companion <span class="out">&#8599; browser extension</span></h2>
+    <p style="font-size:15px;line-height:1.55;margin:6px 0">
+      Pauses any movie at moments you choose and shows a conversation card — a kid question,
+      a tap-quiz, and a note for you with the mythology behind the scene. Works on anything
+      that plays video in the browser. No tracking, nothing leaves your computer.</p>
+    <a class="btn" href="movie-companion.zip" download>&#11015; Download the extension (.zip)</a>
+    <ol>
+      <li>Unzip it somewhere permanent.</li>
+      <li>Open <code>chrome://extensions</code>, turn on <strong>Developer mode</strong> (top right).</li>
+      <li>Click <strong>Load unpacked</strong> and pick the unzipped folder.</li>
+      <li>Pin the icon, open your movie, press play.</li>
+    </ol>
+    <p class="ext-link">Comes with three Moana sets: Discussion, Real Legends told at sea,
+      and the Repair Lens. Switch sets and themes in the extension popup.</p>
+  </section>
+
+  <section>
+    <h2>2 &middot; Your movies <span class="out">&#8599; your own purchases</span></h2>
+    <p style="font-size:15px;line-height:1.5;margin:6px 0">
+      Paste the link to where <em>your family</em> bought or streams each film (YouTube,
+      Disney+, Netflix...). It is saved only in this browser — no accounts, nothing uploaded.
+      The WATCH button opens your copy; have the companion pinned and it takes over from there.</p>
+    <div id="movies"></div>
+    <p class="hint">These links are yours alone. The shared story materials never include
+      links to purchased content — only to official, public pages.</p>
+  </section>
+
+  <section>
+    <h2>3 &middot; Channels &amp; making your own <span class="out">&#8599; recursive.eco</span></h2>
+    <ol>
+      <li><a href="https://recursive.eco/channels">Browse channels</a> — the commons of
+        decks, books, and companions families have shared.</li>
+      <li><a href="https://flow.recursive.eco">Your studio</a> — sign in to see your own
+        channel and grammars, copy any commons companion, and make it yours (change the
+        questions, the timestamps, the language).</li>
+      <li>Course: <em>Make your own Movie Companion</em> — coming to this page soon.</li>
+    </ol>
+  </section>
+
+  <footer style="font-size:12.5px;color:#a99fd0;line-height:1.6;margin-top:30px">
+    Noncommercial &middot; our own words only &middot; CC-BY-SA-4.0 &middot;
+    <a href="https://github.com/PlayfulProcess">PlayfulProcess</a>
+  </footer>
+</div>
+<script>
+  var MOVIES = ["Moana", "Frozen", "KPop Demon Hunters"];
+  var box = document.getElementById("movies");
+  MOVIES.forEach(function (m) {
+    var key = "fwc-watch-" + m.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    var row = document.createElement("div"); row.className = "movie-row";
+    var name = document.createElement("span"); name.className = "name"; name.textContent = m;
+    var input = document.createElement("input");
+    input.placeholder = "https://... where your family watches " + m;
+    input.value = localStorage.getItem(key) || "";
+    input.addEventListener("change", function () { localStorage.setItem(key, input.value.trim()); });
+    var btn = document.createElement("button"); btn.textContent = "WATCH";
+    btn.addEventListener("click", function () {
+      var url = (localStorage.getItem(key) || input.value || "").trim();
+      if (url) window.open(url, "_blank");
+      else alert("Paste your " + m + " link first — the page will remember it.");
+    });
+    row.append(name, input, btn); box.appendChild(row);
+  });
+</script>
+</body>
+</html>
