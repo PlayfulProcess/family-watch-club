@@ -4,45 +4,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Family Watch Club — The Harbor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
 <style>
-  :root { --deep:#16213e; --deeper:#0f3460; --gold:#e4c65b; --sky:#9fd8ff; --ink:#eef2fb; }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:"Avenir","Nunito","Segoe UI",system-ui,sans-serif;
-         background:linear-gradient(170deg,var(--deep) 0%,var(--deeper) 100%); color:var(--ink); min-height:100vh; }
-  .wrap { max-width:860px; margin:0 auto; padding:32px 20px 64px; }
-  header h1 { color:var(--gold); font-size:clamp(26px,5vw,40px); margin:0 0 6px; }
-  header p.tag { color:var(--sky); margin:0 0 4px; font-size:17px; }
-  .harbor-note { background:rgba(255,255,255,.07); border-left:3px solid var(--gold);
-                 border-radius:8px; padding:10px 14px; margin:18px 0 28px; font-size:14px; line-height:1.5; }
-  .harbor-note strong { color:var(--gold); }
-  h2 { color:var(--sky); font-size:20px; margin:34px 0 12px; }
-  .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:16px; }
-  a.card { display:block; background:rgba(255,255,255,.06); border:1.5px solid rgba(228,198,91,.4);
-           border-radius:14px; padding:18px; color:var(--ink); text-decoration:none; transition:transform .12s; }
-  a.card:hover { transform:translateY(-3px); border-color:var(--gold); }
-  a.card .t { font-weight:800; font-size:17px; color:var(--gold); margin-bottom:6px; }
-  a.card .d { font-size:14px; line-height:1.45; color:var(--ink); }
-  a.card .b { display:inline-block; margin-top:10px; font-size:11px; letter-spacing:.1em;
-              text-transform:uppercase; color:var(--sky); }
-  footer { margin-top:48px; font-size:12.5px; color:#8fa3c8; line-height:1.6; }
-  footer a { color:var(--sky); }
-  .grownups { margin-top:40px; text-align:center; }
-  .grownups a { color:var(--sky); font-size:14px; }
+  body { margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); min-height:100vh; }
+  .topbar { border-bottom:1px solid var(--line); background:var(--surface); }
+  .topbar .in { max-width:920px; margin:0 auto; padding:14px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  .topbar .brand { font-family:var(--serif-display); font-weight:700; font-size:19px; color:var(--ink); text-decoration:none; }
+  .topbar nav { margin-left:auto; display:flex; gap:16px; font-size:14px; }
+  .topbar nav a { color:var(--ink-soft); text-decoration:none; }
+  .topbar nav a.here { color:var(--gold); font-weight:600; }
+  .topbar nav a:hover { color:var(--gold); }
+  .wrap { max-width:920px; margin:0 auto; padding:36px 20px 72px; }
+  h1 { font-family:var(--serif-display); font-weight:600; font-size:clamp(28px,5vw,42px); margin:0 0 8px; }
+  p.tag { color:var(--ink-soft); margin:0; font-size:17px; line-height:1.5; }
+  .zone { display:inline-flex; align-items:center; gap:8px; margin:20px 0 30px; background:var(--surface);
+          border:1px solid var(--line); border-left:3px solid var(--harbor); border-radius:10px;
+          padding:10px 16px; font-size:14px; line-height:1.55; color:var(--ink-soft); }
+  .zone strong { color:var(--harbor); }
+  h2 { font-family:var(--serif-display); font-weight:600; font-size:22px; margin:38px 0 14px; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:16px; }
+  a.card { display:block; background:var(--surface); border:1px solid var(--line); border-radius:14px;
+           padding:20px; color:var(--ink); text-decoration:none; box-shadow:var(--shadow-card);
+           transition:transform .12s, box-shadow .12s; }
+  a.card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lift); }
+  a.card .t { font-family:var(--serif-display); font-weight:600; font-size:18px; margin-bottom:6px; }
+  a.card .d { font-size:14px; line-height:1.5; color:var(--ink-soft); }
+  a.card .b { display:inline-block; margin-top:12px; font-size:11px; letter-spacing:.1em;
+              text-transform:uppercase; color:var(--gold); font-weight:600; }
+  .grownups { margin-top:44px; text-align:center; font-size:14.5px; }
+  .grownups a { color:var(--launch); }
+  footer { margin-top:56px; border-top:1px solid var(--line); padding-top:18px;
+           font-size:12.5px; color:var(--mut); line-height:1.6; }
+  footer a { color:var(--gold); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>&#9875; Family Watch Club</h1>
-    <p class="tag">Old stories, good questions, and movie nights that turn into conversations.</p>
-  </header>
+<div class="topbar"><div class="in">
+  <a class="brand" href="index.html">Family Watch Club</a>
+  <nav>
+    <a class="here" href="index.html">Harbor</a>
+    <a href="parents.html">Launchpad</a>
+    <a href="https://recursive.eco">recursive.eco</a>
+  </nav>
+</div></div>
 
-  <div class="harbor-note">
-    <strong>You are in the Harbor.</strong> Everything on this page is self-contained:
-    no accounts, no forms, nothing to buy, and no links that sail off to the open internet.
-    Kids can explore here on their own. Grown-ups: your page is the
-    <a href="parents.html" style="color:var(--gold)">Launchpad</a>.
-  </div>
+<div class="wrap">
+  <h1>The Harbor</h1>
+  <p class="tag">Old stories, good questions, and movie nights that turn into conversations.</p>
+
+  <div class="zone"><span>&#9875;</span><span><strong>Everything here is self-contained.</strong>
+    No accounts, no forms, nothing to buy, and no links that sail off to the open internet.
+    Kids can explore on their own.</span></div>
 
   <h2>Books to read together</h2>
   <div class="cards">
@@ -82,7 +97,7 @@
     (CC-BY-SA-4.0, <a href="https://github.com/PlayfulProcess">PlayfulProcess</a>).
     We use no film dialogue, lyrics, or studio artwork — only our own questions and
     commentary about the movies we love, and public-domain art with credits.
-    Built on <a href="https://recursive.eco">recursive.eco</a>.
+    Part of the <a href="https://recursive.eco">recursive.eco</a> commons.
   </footer>
 </div>
 </body>

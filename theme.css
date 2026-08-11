@@ -1,0 +1,41 @@
+/* ───────────────────────────────────────────────────────────────────────────
+   Family Watch Club — shared design tokens, inherited from the recursive
+   channels family (recursive-tarot/theme.css). DEFINE COLOURS HERE ONLY.
+   Light-only: backgrounds always light, text always dark enough to read.
+   ─────────────────────────────────────────────────────────────────────────── */
+:root{
+  /* —— surfaces (always light) —— */
+  --bg:#f4f1ea;            /* page background (warm paper) */
+  --surface:#ffffff;       /* cards / panels */
+  --panel2:#faf8f3;        /* slightly recessed panel */
+  --chip:#faf3e6;          /* soft gold chip fill */
+
+  /* —— ink —— */
+  --ink:#221f1a;
+  --ink-soft:#4a4439;
+  --mut:#6b6457;
+  --faint:#8a8273;
+
+  /* —— hairlines —— */
+  --line:#d8d2c6;
+  --line-soft:#cfc8ba;
+
+  /* —— the one UI accent: restrained gold —— */
+  --gold:#9a7322;
+  --gold-dark:#7c5b18;
+
+  /* —— harbor / launchpad zone hues (mid-tone, legible on light) —— */
+  --harbor:#3f7a5c;        /* self-contained, kid-alone-safe */
+  --launch:#6d4ab6;        /* leaves the harbor (grown-up zone) */
+
+  /* —— shadows —— */
+  --shadow-card:0 14px 30px -20px rgba(60,45,20,.55);
+  --shadow-lift:0 26px 46px -22px rgba(60,45,20,.6);
+
+  /* —— type families —— */
+  --serif-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+
+/* recursive.eco links render in the platform purple, site-wide (wayfinding to the parent) */
+a[href^="https://recursive.eco"],a[href^="https://flow.recursive.eco"],a[href^="https://kids.recursive.eco"]{color:#9333ea}

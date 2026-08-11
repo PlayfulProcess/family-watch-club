@@ -4,47 +4,73 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Family Watch Club — The Launchpad (for grown-ups)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
 <style>
-  :root { --deep:#16213e; --deeper:#0f3460; --gold:#e4c65b; --sky:#9fd8ff; --ink:#eef2fb; }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:"Avenir","Nunito","Segoe UI",system-ui,sans-serif;
-         background:linear-gradient(170deg,#1c1633 0%,#34275e 100%); color:var(--ink); min-height:100vh; }
-  .wrap { max-width:860px; margin:0 auto; padding:32px 20px 64px; }
-  header h1 { color:var(--gold); font-size:clamp(24px,5vw,36px); margin:0 0 6px; }
-  .zone-note { background:rgba(255,255,255,.08); border-left:3px solid #c77dff;
-               border-radius:8px; padding:10px 14px; margin:18px 0 26px; font-size:14px; line-height:1.5; }
-  .zone-note strong { color:#c77dff; }
-  h2 { color:var(--sky); font-size:19px; margin:32px 0 10px; }
-  section { background:rgba(255,255,255,.05); border-radius:14px; padding:18px 20px; margin-bottom:18px; }
-  ol { margin:8px 0 0; padding-left:22px; font-size:15px; line-height:1.7; }
-  a { color:var(--sky); }
-  .btn { display:inline-block; background:var(--gold); color:var(--deep); font-weight:800;
-         padding:9px 20px; border-radius:999px; text-decoration:none; font-size:15px; margin-top:8px; }
-  .ext-link { font-size:12.5px; color:#8fa3c8; margin-top:6px; }
-  .movie-row { display:flex; gap:8px; align-items:center; margin:8px 0; flex-wrap:wrap; }
-  .movie-row .name { min-width:120px; font-weight:700; color:var(--gold); }
-  .movie-row input { flex:1; min-width:200px; background:rgba(0,0,0,.3); color:var(--ink);
-                     border:1px solid #5a4d8a; border-radius:8px; padding:8px 10px; font-size:13px; }
-  .movie-row button { background:var(--gold); color:var(--deep); border:none; border-radius:8px;
-                      padding:8px 16px; font-weight:800; cursor:pointer; font-size:13px; }
-  .hint { font-size:12.5px; color:#a99fd0; line-height:1.5; margin-top:8px; }
-  .out { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#c77dff; }
+  body { margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); min-height:100vh; }
+  .topbar { border-bottom:1px solid var(--line); background:var(--surface); }
+  .topbar .in { max-width:920px; margin:0 auto; padding:14px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  .topbar .brand { font-family:var(--serif-display); font-weight:700; font-size:19px; color:var(--ink); text-decoration:none; }
+  .topbar nav { margin-left:auto; display:flex; gap:16px; font-size:14px; }
+  .topbar nav a { color:var(--ink-soft); text-decoration:none; }
+  .topbar nav a.here { color:var(--gold); font-weight:600; }
+  .topbar nav a:hover { color:var(--gold); }
+  .wrap { max-width:920px; margin:0 auto; padding:36px 20px 72px; }
+  h1 { font-family:var(--serif-display); font-weight:600; font-size:clamp(26px,5vw,38px); margin:0 0 8px; }
+  h1 small { font-family:var(--sans); font-size:15px; color:var(--mut); font-weight:400; }
+  .zone { display:inline-flex; align-items:center; gap:8px; margin:18px 0 28px; background:var(--surface);
+          border:1px solid var(--line); border-left:3px solid var(--launch); border-radius:10px;
+          padding:10px 16px; font-size:14px; line-height:1.55; color:var(--ink-soft); }
+  .zone strong { color:var(--launch); }
+  .zone a { color:var(--harbor); }
+  section { background:var(--surface); border:1px solid var(--line); border-radius:14px;
+            padding:22px 24px; margin-bottom:18px; box-shadow:var(--shadow-card); }
+  h2 { font-family:var(--serif-display); font-weight:600; font-size:20px; margin:0 0 10px; }
+  .out { font-family:var(--sans); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+         color:var(--launch); font-weight:600; }
+  p { font-size:15px; line-height:1.55; color:var(--ink-soft); margin:6px 0; }
+  ol { margin:8px 0 0; padding-left:22px; font-size:15px; line-height:1.75; color:var(--ink-soft); }
+  code { background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:13px; }
+  .btn { display:inline-block; background:var(--gold); color:#fff; font-weight:600;
+         padding:9px 22px; border-radius:999px; text-decoration:none; font-size:14.5px; margin-top:10px; }
+  .btn:hover { background:var(--gold-dark); }
+  .small { font-size:12.5px; color:var(--mut); margin-top:8px; line-height:1.5; }
+  .movie-row { display:flex; gap:8px; align-items:center; margin:10px 0; flex-wrap:wrap; }
+  .movie-row .name { min-width:130px; font-family:var(--serif-display); font-weight:600; font-size:15.5px; }
+  .movie-row input { flex:1; min-width:200px; background:var(--panel2); color:var(--ink);
+                     border:1px solid var(--line-soft); border-radius:8px; padding:8px 10px; font-size:13px; }
+  .movie-row input:focus { outline:none; border-color:var(--gold); }
+  .movie-row button { background:var(--gold); color:#fff; border:none; border-radius:8px;
+                      padding:8px 18px; font-weight:600; cursor:pointer; font-size:13px; }
+  .movie-row button:hover { background:var(--gold-dark); }
+  footer { margin-top:40px; border-top:1px solid var(--line); padding-top:16px;
+           font-size:12.5px; color:var(--mut); line-height:1.6; }
+  footer a { color:var(--gold); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header><h1>&#128640; The Launchpad <span style="font-size:15px;color:#a99fd0">(for grown-ups)</span></h1></header>
+<div class="topbar"><div class="in">
+  <a class="brand" href="index.html">Family Watch Club</a>
+  <nav>
+    <a href="index.html">Harbor</a>
+    <a class="here" href="parents.html">Launchpad</a>
+    <a href="https://recursive.eco">recursive.eco</a>
+  </nav>
+</div></div>
 
-  <div class="zone-note">
-    <strong>This page leaves the Harbor.</strong> Links here go out to the open internet —
-    streaming sites, GitHub, recursive.eco. Set things up here, then send the kids back to
-    the <a href="index.html" style="color:var(--gold)">Harbor</a>, which stays self-contained.
-  </div>
+<div class="wrap">
+  <h1>The Launchpad <small>(for grown-ups)</small></h1>
+
+  <div class="zone"><span>&#128640;</span><span><strong>This page leaves the Harbor.</strong>
+    Links here go out to the open internet — streaming sites, GitHub, recursive.eco.
+    Set things up here, then send the kids back to the <a href="index.html">Harbor</a>,
+    which stays self-contained.</span></div>
 
   <section>
     <h2>1 &middot; The Movie Companion <span class="out">&#8599; browser extension</span></h2>
-    <p style="font-size:15px;line-height:1.55;margin:6px 0">
-      Pauses any movie at moments you choose and shows a conversation card — a kid question,
+    <p>Pauses any movie at moments you choose and shows a conversation card — a kid question,
       a tap-quiz, and a note for you with the mythology behind the scene. Works on anything
       that plays video in the browser. No tracking, nothing leaves your computer.</p>
     <a class="btn" href="movie-companion.zip" download>&#11015; Download the extension (.zip)</a>
@@ -54,18 +80,17 @@
       <li>Click <strong>Load unpacked</strong> and pick the unzipped folder.</li>
       <li>Pin the icon, open your movie, press play.</li>
     </ol>
-    <p class="ext-link">Comes with three Moana sets: Discussion, Real Legends told at sea,
-      and the Repair Lens. Switch sets and themes in the extension popup.</p>
+    <p class="small">Comes with three Moana sets: Discussion, Real Legends told at sea,
+      and the Repair Lens. Switch movies and themes in the extension popup.</p>
   </section>
 
   <section>
     <h2>2 &middot; Your movies <span class="out">&#8599; your own purchases</span></h2>
-    <p style="font-size:15px;line-height:1.5;margin:6px 0">
-      Paste the link to where <em>your family</em> bought or streams each film (YouTube,
+    <p>Paste the link to where <em>your family</em> bought or streams each film (YouTube,
       Disney+, Netflix...). It is saved only in this browser — no accounts, nothing uploaded.
       The WATCH button opens your copy; have the companion pinned and it takes over from there.</p>
     <div id="movies"></div>
-    <p class="hint">These links are yours alone. The shared story materials never include
+    <p class="small">These links are yours alone. The shared story materials never include
       links to purchased content — only to official, public pages.</p>
   </section>
 
@@ -81,9 +106,9 @@
     </ol>
   </section>
 
-  <footer style="font-size:12.5px;color:#a99fd0;line-height:1.6;margin-top:30px">
+  <footer>
     Noncommercial &middot; our own words only &middot; CC-BY-SA-4.0 &middot;
-    <a href="https://github.com/PlayfulProcess">PlayfulProcess</a>
+    <a href="https://github.com/PlayfulProcess/family-watch-club">source on GitHub</a>
   </footer>
 </div>
 <script>
