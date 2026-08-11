@@ -1,0 +1,254 @@
+{
+  "name": "KPop Demon Hunters — Movie Companion",
+  "recursive_eco_id": "9e7e04bf-34ce-4e31-94ac-281589d0dd16",
+  "description": "Pause-and-talk cards for family movie night with KPop Demon Hunters (2025). Each item is one pause point: a Wonder Together question for the kid, a For the Grown-up note, and an optional tap-quiz (metadata.quiz). metadata.time is where it fires (timestamps are ROUGH first drafts — verify with the extension's \"Grab current movie time\" and nudge buttons); metadata.lens is the theme — \"discussion\" or \"repair\" (rupture → armor → truth → return → restoration). Our own commentary and questions only — no film dialogue, lyrics, or studio artwork. Part of the Family Watch Club (watch.recursive.eco).",
+  "grammar_type": "custom",
+  "tags": [
+    "movie-companion",
+    "kpop-demon-hunters",
+    "family-movie-night",
+    "emotional-intelligence",
+    "repair",
+    "parents"
+  ],
+  "attribution": {
+    "license": "Original questions and commentary, CC-BY-SA-4.0, by PlayfulProcess.",
+    "note": "Commentary about the film. Contains no film dialogue, lyrics, or studio artwork. Scene titles reference song/scene names for navigation only."
+  },
+  "items": [
+    {
+      "name": "Huntrix on stage",
+      "category": "discussion",
+      "keywords": [
+        "performance",
+        "shine",
+        "lantern"
+      ],
+      "sections": {
+        "Wonder Together": "The girls shine on stage AND fight demons in secret. Which job do you think is harder?",
+        "For the Grown-up": "Set up the movie's central image early: their singing isn't just showbiz — the fans' real connection to them literally powers the Honmoon, the barrier that protects everyone. Shine that protects people = the lantern. Hold that thought for when the Saja Boys arrive with the other kind of shine."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "It's just entertainment",
+              "reply": "Look at the glowing barrier when the fans sing along..."
+            },
+            {
+              "text": "It powers the Honmoon — the barrier that keeps demons out",
+              "reply": "YES. Their art is protection. When people connect through their songs, everyone gets safer. That's shine used as a lantern.",
+              "right": true
+            },
+            {
+              "text": "It puts demons to sleep",
+              "reply": "Not sleep — it keeps them OUT, by keeping people connected."
+            }
+          ],
+          "question": "What does Huntrix's singing actually DO in this world?"
+        },
+        "time": "6:00",
+        "movie": "KPop Demon Hunters"
+      }
+    },
+    {
+      "name": "Rumi's patterns",
+      "category": "repair",
+      "keywords": [
+        "secret",
+        "shame",
+        "armor"
+      ],
+      "sections": {
+        "Wonder Together": "Rumi hides the marks on her skin from her best friends. What do you think hiding something that big feels like in the body?",
+        "For the Grown-up": "The repair arc's rupture + armor in one image: the patterns are just TRUE — part of where she comes from — but she's been taught to read them as shameful. Same move as Elsa's gloves and Tui's reef rule. The distinction that matters for our kids: patterns we inherit come in two kinds — ones that protect (Honmoon-like) and ones that shame (Gwi-Ma-like) — and the skill is telling them apart."
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "They're dangerous to touch",
+              "reply": "Nobody gets hurt by them — the danger is in what people might THINK."
+            },
+            {
+              "text": "She was taught they make her unlovable",
+              "reply": "YES. The patterns are just true — it's the shame story wrapped around them that hurts. Elsa's gloves are the same armor in another movie.",
+              "right": true
+            },
+            {
+              "text": "It's a fashion choice",
+              "reply": "If only! Watch how much energy the hiding costs her."
+            }
+          ],
+          "question": "Why does Rumi hide her patterns?"
+        },
+        "time": "18:00",
+        "movie": "KPop Demon Hunters"
+      }
+    },
+    {
+      "name": "The Saja Boys arrive",
+      "category": "discussion",
+      "keywords": [
+        "idol",
+        "saja-boys",
+        "paddle"
+      ],
+      "sections": {
+        "Wonder Together": "The Saja Boys are SO catchy and everyone loves them instantly. Can you feel the difference between their shine and Huntrix's shine?",
+        "For the Grown-up": "Here's the idol trap made literal: the Saja Boys' shine is designed to make fans hand over their energy — to give up their paddle, not paddle harder. A lantern lights your way; an idol asks for your rowing. Fun family test for any star or influencer: after watching them, do you want to DO more, or just watch more?"
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "A lantern makes you paddle more; an idol takes your paddle",
+              "reply": "YES. Good heroes leave you stronger and more yourself. The Saja Boys' whole plan is to collect paddles.",
+              "right": true
+            },
+            {
+              "text": "Lanterns are brighter",
+              "reply": "Brightness isn't it — the Saja Boys are PLENTY bright. Look at what happens to the fans' energy."
+            },
+            {
+              "text": "There is no difference",
+              "reply": "The whole movie disagrees — watch what each kind of shine does to the people watching."
+            }
+          ],
+          "question": "What's the difference between a lantern and an idol?"
+        },
+        "time": "30:00",
+        "movie": "KPop Demon Hunters"
+      }
+    },
+    {
+      "name": "Rumi and Jinu",
+      "category": "repair",
+      "keywords": [
+        "jinu",
+        "hurt",
+        "seeing"
+      ],
+      "sections": {
+        "Wonder Together": "Jinu is supposed to be the enemy. What does Rumi see in him that nobody else sees?",
+        "For the Grown-up": "The Moana-and-Te-Kā move: looking underneath the monster and finding a hurt person — Jinu carries an old bargain he made from desperation, and Gwi-Ma holds him with shame. Rumi can see it because she knows what hiding feels like. Careful family conversation: seeing the hurt under someone's armor doesn't mean excusing what they do — it means knowing what you're actually talking to."
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "She has magic vision",
+              "reply": "No magic needed — something simpler and braver."
+            },
+            {
+              "text": "She knows what it's like to hide part of yourself",
+              "reply": "YES. Her secret lets her recognize his. The scary thing is a hurt thing — Te Kā all over again.",
+              "right": true
+            },
+            {
+              "text": "She doesn't — she's being tricked",
+              "reply": "There IS risk here — good instinct. But watch what her seeing eventually makes possible."
+            }
+          ],
+          "question": "Why can Rumi see past Jinu's demon side?"
+        },
+        "time": "50:00",
+        "movie": "KPop Demon Hunters"
+      }
+    },
+    {
+      "name": "The secret comes out",
+      "category": "repair",
+      "keywords": [
+        "exposure",
+        "truth",
+        "friends"
+      ],
+      "sections": {
+        "Wonder Together": "Rumi's patterns are seen at the worst possible moment. What's the difference between a secret being TAKEN from you and a truth you choose to tell?",
+        "For the Grown-up": "Truth arriving as exposure instead of confession — the armor ripped off rather than taken off. It's why this lands as catastrophe instead of relief. The repair arc says truth is the middle step, but HOW truth arrives matters. Worth naming for kids: telling your own truth early, to people you trust, is the gentle version of what happens here the hard way."
+      },
+      "metadata": {
+        "lens": "repair",
+        "time": "1:10:00",
+        "movie": "KPop Demon Hunters"
+      }
+    },
+    {
+      "name": "Gwi-Ma's voice",
+      "category": "discussion",
+      "keywords": [
+        "gwi-ma",
+        "shame",
+        "voices"
+      ],
+      "sections": {
+        "Wonder Together": "Gwi-Ma doesn't fight with claws — he fights with a voice that tells people they're worthless. Have you ever heard a voice like that in your own head?",
+        "For the Grown-up": "The most psychologically precise villain in any of our three movies: shame as literal fuel. Gwi-Ma's whispers only work on what people already fear about themselves. The somatic skill from our curriculum applies directly — the shaming voice FEELS different in the body than the protecting one. Ask: where do you feel it when a mean thought shows up? Naming the body-place shrinks the voice."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "It's very loud",
+              "reply": "It's usually a whisper. Loudness isn't the weapon..."
+            },
+            {
+              "text": "It repeats the fears people already carry",
+              "reply": "YES. He can only use what shame already put there. Which means every secret told to a trusted person is ammunition taken AWAY from him.",
+              "right": true
+            },
+            {
+              "text": "It can control anyone at any time",
+              "reply": "Watch who he CAN'T reach — people standing in their truth are terrible customers."
+            }
+          ],
+          "question": "What makes Gwi-Ma's voice powerful?"
+        },
+        "time": "1:18:00",
+        "movie": "KPop Demon Hunters"
+      }
+    },
+    {
+      "name": "Singing the truth",
+      "category": "repair",
+      "keywords": [
+        "finale",
+        "restoration",
+        "honmoon"
+      ],
+      "sections": {
+        "Wonder Together": "In the end, the barrier isn't rebuilt by hiding better — it's rebuilt by singing the truth out loud, patterns showing. Why is the true version STRONGER than the perfect version?",
+        "For the Grown-up": "Full repair arc completed: rupture (the secret), armor (the hiding), truth (spoken — sung — at last), return (to her friends and the stage), restoration that re-equips (a barrier made of honesty instead of performance — stronger than the original, like Maui's new hook). In all three of our movies the hidden truth comes out as a song. Closing couch question: what's OUR family's version of singing it instead of hiding it?"
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "Hiding the patterns better than before",
+              "reply": "That was the OLD plan — the one that nearly broke everything."
+            },
+            {
+              "text": "Truth sung out loud, patterns and all",
+              "reply": "YES. Connection built on the real story is stronger than connection built on the perfect one. Repair that re-equips — the mended place outshines the unbroken one.",
+              "right": true
+            },
+            {
+              "text": "A bigger, louder concert",
+              "reply": "Volume isn't it — the Saja Boys were plenty loud. Listen for what's DIFFERENT about this song."
+            }
+          ],
+          "question": "What finally makes the protection strong again?"
+        },
+        "time": "1:28:00",
+        "movie": "KPop Demon Hunters"
+      }
+    }
+  ]
+}

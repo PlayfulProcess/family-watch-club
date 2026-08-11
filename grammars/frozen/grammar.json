@@ -1,0 +1,269 @@
+{
+  "name": "Frozen — Movie Companion",
+  "recursive_eco_id": "4411c4f5-11e0-43c5-91be-bf248964dd6f",
+  "description": "Pause-and-talk cards for family movie night with Frozen (2013). Each item is one pause point: a Wonder Together question for the kid, a For the Grown-up note, and an optional tap-quiz (metadata.quiz). metadata.time is where it fires (ad-free version, approximate — use the extension's nudge buttons); metadata.lens is the theme — \"discussion\" or \"repair\" (rupture → armor → truth → return → restoration). Our own commentary and questions only — no film dialogue, lyrics, or studio artwork. Part of the Family Watch Club (watch.recursive.eco).",
+  "grammar_type": "custom",
+  "tags": [
+    "movie-companion",
+    "frozen",
+    "family-movie-night",
+    "emotional-intelligence",
+    "repair",
+    "parents"
+  ],
+  "attribution": {
+    "license": "Original questions and commentary, CC-BY-SA-4.0, by PlayfulProcess.",
+    "note": "Commentary about the film. Contains no film dialogue, lyrics, or studio artwork. Scene titles reference song/scene names for navigation only."
+  },
+  "items": [
+    {
+      "name": "The trolls' warning",
+      "category": "discussion",
+      "keywords": [
+        "head",
+        "heart",
+        "beginning"
+      ],
+      "sections": {
+        "Wonder Together": "The trolls say the head can be persuaded, but the heart is harder. What do you think that means?",
+        "For the Grown-up": "The whole movie is set up in this one line of folk wisdom. Notice what the grown-ups do with the warning: they erase Anna's memory and hide Elsa away — they treat a HEART problem with a HEAD solution. Watch how that works out."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "Help her practice them safely",
+              "reply": "That's what we might hope — but watch again. The gates close, the staff is reduced, the gloves go on..."
+            },
+            {
+              "text": "Hide them — gloves, closed gates, secrets",
+              "reply": "YES. They choose hiding over practicing. It comes from love AND fear at once — and it becomes the armor Elsa carries for the whole movie.",
+              "right": true
+            },
+            {
+              "text": "Send her away forever",
+              "reply": "No — they keep her home. But home becomes a kind of hiding place."
+            }
+          ],
+          "question": "What do the parents decide to do about Elsa's powers?"
+        },
+        "time": "6:00",
+        "movie": "Frozen"
+      }
+    },
+    {
+      "name": "Do You Want to Build a Snowman?",
+      "category": "repair",
+      "keywords": [
+        "separation",
+        "armor",
+        "sisters"
+      ],
+      "sections": {
+        "Wonder Together": "Anna knocks and knocks for years. Why doesn't Elsa ever open the door?",
+        "For the Grown-up": "Repair-arc reading: the closed door is armor, not rejection — Elsa believes staying away IS the loving thing. Both sisters are hurting on opposite sides of the same door, each thinking the other doesn't want them. Worth asking: has anyone ever seemed to shut you out when they were really protecting you?"
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "She doesn't love Anna anymore",
+              "reply": "She loves her the WHOLE time — watch her face on the other side of the door."
+            },
+            {
+              "text": "She's scared of hurting Anna again",
+              "reply": "YES. The door is armor around an old accident. Protection that outlived its moment — Moana's dad has the same rule about the reef.",
+              "right": true
+            },
+            {
+              "text": "She's too busy being queen",
+              "reply": "This is years before she's queen. It started the night of the accident."
+            }
+          ],
+          "question": "Why does Elsa keep the door closed?"
+        },
+        "time": "12:00",
+        "movie": "Frozen"
+      }
+    },
+    {
+      "name": "Love Is an Open Door",
+      "category": "discussion",
+      "keywords": [
+        "hans",
+        "trust",
+        "fast-love"
+      ],
+      "sections": {
+        "Wonder Together": "Anna wants to marry Hans the day she met him! What do you think about that?",
+        "For the Grown-up": "The movie deliberately sets up the fairy-tale shortcut so it can question it later. A kid-sized way in: how long does it take to really know a friend? Anna has been lonely behind closed gates for years — the loneliness, not silliness, is what makes the shortcut tempting."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "Because Hans is definitely her true love",
+              "reply": "The movie has a BIG surprise about that. Keep watching..."
+            },
+            {
+              "text": "Because she's been lonely for so long",
+              "reply": "YES. Years of closed doors made an open door feel like everything. Loneliness can make us decide too fast.",
+              "right": true
+            },
+            {
+              "text": "Because the trolls told her to",
+              "reply": "The trolls aren't here — this one is all Anna."
+            }
+          ],
+          "question": "Why does Anna say yes so fast?"
+        },
+        "time": "23:00",
+        "movie": "Frozen"
+      }
+    },
+    {
+      "name": "Let It Go",
+      "category": "discussion",
+      "keywords": [
+        "elsa",
+        "freedom",
+        "isolation"
+      ],
+      "sections": {
+        "Wonder Together": "Elsa finally uses her powers and builds something beautiful. Is she free now, or alone — or both?",
+        "For the Grown-up": "The trick of this scene: it FEELS like pure victory, and it's half of one. Elsa drops the armor of hiding — real progress — but swaps it for the armor of distance (a palace with no door handles, on a mountain, alone). Same tension as Moana's ocean and Rumi's stage: the truth is out, but connection still missing."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "Nothing — it's perfect",
+              "reply": "It IS beautiful. But count the people in it..."
+            },
+            {
+              "text": "Other people",
+              "reply": "YES. She traded hiding-among-people for shining-alone. Free AND lonely can be true at the same time.",
+              "right": true
+            },
+            {
+              "text": "More ice",
+              "reply": "There is definitely enough ice."
+            }
+          ],
+          "question": "Elsa builds an amazing ice palace. What's missing from it?"
+        },
+        "time": "32:00",
+        "movie": "Frozen"
+      }
+    },
+    {
+      "name": "Anna comes to the palace",
+      "category": "repair",
+      "keywords": [
+        "return",
+        "sisters"
+      ],
+      "sections": {
+        "Wonder Together": "Anna climbs a whole frozen mountain to reach her sister. What makes her keep going?",
+        "For the Grown-up": "Repair-arc: this is the RETURN step — going toward the person instead of away. Notice it doesn't work yet: Anna returns, but leads with the problem (the frozen kingdom), and Elsa's armor slams down harder. Return alone isn't enough; the truth step hasn't happened yet. Real repairs often take more than one try."
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "Anna doesn't really want to fix things",
+              "reply": "She climbed a MOUNTAIN for this. Wanting isn't the problem."
+            },
+            {
+              "text": "Elsa's fear rises faster than Anna's words can land",
+              "reply": "YES. When armor is threatened it strikes out — Elsa literally storms. You can't reason with armor; the hurt under it has to be spoken to. First tries at repair often fail. Keep watching.",
+              "right": true
+            },
+            {
+              "text": "The snowman interrupts them",
+              "reply": "Olaf is actually the most honest one on that mountain!"
+            }
+          ],
+          "question": "Anna reaches Elsa at last — why does it go wrong?"
+        },
+        "time": "58:00",
+        "movie": "Frozen"
+      }
+    },
+    {
+      "name": "An act of true love",
+      "category": "discussion",
+      "keywords": [
+        "frozen-heart",
+        "love"
+      ],
+      "sections": {
+        "Wonder Together": "Only an act of true love can thaw a frozen heart. What counts as an act of true love?",
+        "For the Grown-up": "Everyone in the movie — and most of us watching — assumes it means a kiss someone GIVES you. The ending flips it: the act of true love is one Anna DOES. Pause here and collect guesses; the wrong guesses are the fun part."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "time": "1:12:00",
+        "movie": "Frozen"
+      }
+    },
+    {
+      "name": "Anna's choice",
+      "category": "repair",
+      "keywords": [
+        "sacrifice",
+        "truth",
+        "restoration"
+      ],
+      "sections": {
+        "Wonder Together": "Anna could run to her kiss and save herself. She turns toward Elsa instead. Why?",
+        "For the Grown-up": "The whole repair arc lands here. Anna's act says the truth out loud better than words: you are worth standing in front of. And watch what it unlocks — Elsa finally learns the counter-rule to the one she was raised on: not conceal-don't-feel, but love as the thing that makes power safe. Repair that re-equips, exactly like Te Fiti restoring Maui's hook."
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "A kiss from Hans",
+              "reply": "Ouch — the movie has other plans for Hans."
+            },
+            {
+              "text": "A kiss from Kristoff",
+              "reply": "Close guess — the movie WANTS you to think that. But Anna never reaches him..."
+            },
+            {
+              "text": "Anna putting herself between the sword and Elsa",
+              "reply": "YES. The act of true love isn't received — it's GIVEN, by the person we thought needed saving. Love turned outward, not a kiss arriving.",
+              "right": true
+            }
+          ],
+          "question": "What is the act of true love that saves the day?"
+        },
+        "time": "1:25:00",
+        "movie": "Frozen"
+      }
+    },
+    {
+      "name": "The gates stay open",
+      "category": "repair",
+      "keywords": [
+        "ending",
+        "master-lesson"
+      ],
+      "sections": {
+        "Wonder Together": "At the end, Elsa makes an ice rink for everyone and the gates stay open. What changed — her powers, or something else?",
+        "For the Grown-up": "Her powers are identical in the first scene and the last. What changed is the rule she lives by — fear says conceal, love says connect. Master lesson, same as Moana's father: who you are is a choice, not a fixed thing, and the people around you can change their rules too. Closing couch question: is there a door in our family that could open a little more?"
+      },
+      "metadata": {
+        "lens": "repair",
+        "time": "1:33:00",
+        "movie": "Frozen"
+      }
+    }
+  ]
+}

@@ -20,9 +20,9 @@
   --line:#d8d2c6;
   --line-soft:#cfc8ba;
 
-  /* —— the one UI accent: restrained gold —— */
-  --gold:#9a7322;
-  --gold-dark:#7c5b18;
+  /* —— the one UI accent: recursive.eco platform purple —— */
+  --gold:#9333ea;       /* token name kept for page compat; value = platform purple */
+  --gold-dark:#7c2fd0;
 
   /* —— harbor / launchpad zone hues (mid-tone, legible on light) —— */
   --harbor:#3f7a5c;        /* self-contained, kid-alone-safe */
