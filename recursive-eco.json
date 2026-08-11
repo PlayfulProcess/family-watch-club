@@ -1,0 +1,25 @@
+{
+  "_note": "Channel manifest for recursive.eco. Makes the repo self-describing: recursive.eco reads this from raw.githubusercontent.com to bind the repo to the family-watch channel. Membership lives in `tools` (channel_slug=family-watch).",
+  "schema_version": 1,
+  "channel": {
+    "slug": "family-watch",
+    "name": "Family Watch Club",
+    "type": "repo",
+    "gradient": "from-purple-50 to-indigo-100 dark:from-purple-950 dark:to-indigo-900",
+    "description": "Movie companions and old stories for family watch-together nights. Pause-and-talk cards, retold legends, and read-aloud books — our own questions and commentary, never studio content.",
+    "landing_url": "https://watch.recursive.eco",
+    "hero": {
+      "title": "Family Watch Club",
+      "subtitle": "Old stories, good questions, and movie nights that turn into conversations.",
+      "body_md": "Movies are the myths our kids already know by heart. This channel holds companions that pause a film at the right moment and ask a real question — plus the thousand-year-old legends underneath the movies, retold in our own words.\n\nTwo-sided by design: kids get self-contained books and card decks (no accounts, no tracking); grown-ups get the Movie Companion extension and the tools to make their own. Everything here is our own commentary and traditional public-domain stories — no film dialogue, lyrics, or studio artwork, ever.\n\nStart at the harbor: watch.recursive.eco. Copy any companion, change the questions, and offer it back."
+    }
+  },
+  "grammars": {
+    "paths": ["grammars/*/grammar.json"],
+    "exclude": [],
+    "_exclude_note": "The alice-in-wonderland / winnie-the-pooh / a-painful-playful-process-song folders are marked duplicates of kids-stories-club originals, kept here to exercise the sync loop; exclude them once the loop is verified.",
+    "id_map": "grammars/_eco_ids.json"
+  },
+  "maintainers": ["pp@playfulprocess.com"],
+  "default_branch": "main"
+}
