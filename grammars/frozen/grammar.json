@@ -50,7 +50,9 @@
         },
         "time": "6:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "6bd7c844-9846-4f32-89d5-3fb9faa48a6c",
+      "sort_order": 0
     },
     {
       "name": "Do You Want to Build a Snowman?",
@@ -86,7 +88,9 @@
         },
         "time": "12:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "fb57ad6c-fac0-44cd-bb98-4b82d249aafa",
+      "sort_order": 1
     },
     {
       "name": "Love Is an Open Door",
@@ -122,7 +126,9 @@
         },
         "time": "23:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "9e4a98fd-9577-4ae0-927f-a38f54f8ce2b",
+      "sort_order": 2
     },
     {
       "name": "Let It Go",
@@ -158,7 +164,9 @@
         },
         "time": "32:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "4e95d63f-9f50-46a9-aa8d-72015076e809",
+      "sort_order": 3
     },
     {
       "name": "Anna comes to the palace",
@@ -193,7 +201,9 @@
         },
         "time": "58:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "f494f02a-b383-4e64-b716-9d4c30ad6de2",
+      "sort_order": 4
     },
     {
       "name": "An act of true love",
@@ -210,7 +220,9 @@
         "lens": "discussion",
         "time": "1:12:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "16de8763-003b-4654-b44a-445cdcc6316f",
+      "sort_order": 5
     },
     {
       "name": "Anna's choice",
@@ -246,7 +258,9 @@
         },
         "time": "1:25:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "6b25e4cc-f6f7-406c-8d8c-5faae7ba4942",
+      "sort_order": 6
     },
     {
       "name": "The gates stay open",
@@ -263,7 +277,12 @@
         "lens": "repair",
         "time": "1:33:00",
         "movie": "Frozen"
-      }
+      },
+      "id": "a2927c7c-38fd-48c4-8359-9c5f3f294fe0",
+      "sort_order": 7
     }
-  ]
+  ],
+  "is_published": true,
+  "_recursive_eco_url": "https://flow.recursive.eco/g/4411c4f5-11e0-43c5-91be-bf248964dd6f?view=reading",
+  "_recursive_eco_edit_url": "https://flow.recursive.eco/create/dashboard/unified/new?id=4411c4f5-11e0-43c5-91be-bf248964dd6f"
 }
