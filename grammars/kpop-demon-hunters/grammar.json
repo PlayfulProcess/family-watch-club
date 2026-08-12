@@ -50,7 +50,9 @@
         },
         "time": "6:00",
         "movie": "KPop Demon Hunters"
-      }
+      },
+      "id": "34039425-2343-46dc-a24b-ed4d37c92537",
+      "sort_order": 0
     },
     {
       "name": "Rumi's patterns",
@@ -86,7 +88,9 @@
         },
         "time": "18:00",
         "movie": "KPop Demon Hunters"
-      }
+      },
+      "id": "19c6ec0e-db29-409f-92a0-ace88aad3c2a",
+      "sort_order": 1
     },
     {
       "name": "The Saja Boys arrive",
@@ -122,7 +126,9 @@
         },
         "time": "30:00",
         "movie": "KPop Demon Hunters"
-      }
+      },
+      "id": "d2ffe747-0792-43ab-982b-c74302819abf",
+      "sort_order": 2
     },
     {
       "name": "Rumi and Jinu",
@@ -158,7 +164,9 @@
         },
         "time": "50:00",
         "movie": "KPop Demon Hunters"
-      }
+      },
+      "id": "721439e4-60b1-4215-b9cb-eeb19438b480",
+      "sort_order": 3
     },
     {
       "name": "The secret comes out",
@@ -176,7 +184,9 @@
         "lens": "repair",
         "time": "1:10:00",
         "movie": "KPop Demon Hunters"
-      }
+      },
+      "id": "0b581bf0-624a-4960-8186-583a6506dac6",
+      "sort_order": 4
     },
     {
       "name": "Gwi-Ma's voice",
@@ -212,7 +222,9 @@
         },
         "time": "1:18:00",
         "movie": "KPop Demon Hunters"
-      }
+      },
+      "id": "31c3410e-7cc9-40cc-8151-128831b5767c",
+      "sort_order": 5
     },
     {
       "name": "Singing the truth",
@@ -248,7 +260,12 @@
         },
         "time": "1:28:00",
         "movie": "KPop Demon Hunters"
-      }
+      },
+      "id": "2343d063-0f36-4d28-a592-d212138a6c81",
+      "sort_order": 6
     }
-  ]
+  ],
+  "is_published": true,
+  "_recursive_eco_url": "https://flow.recursive.eco/g/9e7e04bf-34ce-4e31-94ac-281589d0dd16?view=reading",
+  "_recursive_eco_edit_url": "https://flow.recursive.eco/create/dashboard/unified/new?id=9e7e04bf-34ce-4e31-94ac-281589d0dd16"
 }
