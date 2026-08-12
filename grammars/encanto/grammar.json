@@ -1,0 +1,254 @@
+{
+  "name": "Encanto — Movie Companion",
+  "recursive_eco_id": "90a7dfa0-831b-4716-8311-8eed711bdf84",
+  "description": "Pause-and-talk cards for family movie night with Encanto (2021). Each item is one pause point: a Wonder Together question for the kid, a For the Grown-up note, and an optional tap-quiz (metadata.quiz). metadata.time is where it fires (approximate — use the extension's nudge buttons); metadata.lens is \"discussion\" or \"repair\" (rupture → armor → truth → return → restoration). Core thread: Bruno did nothing wrong — seeing trouble is not causing it. Our own commentary and questions only — no film dialogue, lyrics, or studio artwork. Part of the Family Watch Club (watch.recursive.eco).",
+  "grammar_type": "custom",
+  "tags": [
+    "movie-companion",
+    "encanto",
+    "family-movie-night",
+    "emotional-intelligence",
+    "repair",
+    "parents"
+  ],
+  "attribution": {
+    "license": "Original questions and commentary, CC-BY-SA-4.0, by PlayfulProcess.",
+    "note": "Commentary about the film. Contains no film dialogue, lyrics, or studio artwork. Scene titles reference song/scene names for navigation only."
+  },
+  "items": [
+    {
+      "name": "The one without a gift",
+      "category": "discussion",
+      "keywords": [
+        "mirabel",
+        "gift",
+        "belonging"
+      ],
+      "sections": {
+        "Wonder Together": "Everyone in the family gets a magic door and a special gift. Mirabel doesn't. How do you think that feels?",
+        "For the Grown-up": "The setup question of the whole film: is your worth your gift, or is it you? Watch how the family treats gifts as jobs — each person IS their usefulness. Mirabel, giftless, is the only one positioned to see the whole family clearly. Sometimes the one who doesn't fit the system is the one who can see it."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "A party",
+              "reply": "She does get a party! Keep watching for the thing she's actually missing..."
+            },
+            {
+              "text": "A magic door and a gift",
+              "reply": "Yes! But watch what she gets INSTEAD — the clearest eyes in the whole house.",
+              "right": true
+            },
+            {
+              "text": "A family",
+              "reply": "She has a big one! The real question is whether she still belongs without a gift."
+            }
+          ],
+          "question": "What does Mirabel NOT get at her big ceremony?"
+        },
+        "time": "9:00",
+        "movie": "Encanto"
+      }
+    },
+    {
+      "name": "The cracks appear",
+      "category": "repair",
+      "keywords": [
+        "cracks",
+        "casita",
+        "signals"
+      ],
+      "sections": {
+        "Wonder Together": "Mirabel sees cracks in the walls. The grown-ups say there's nothing there. Why don't they want to see it?",
+        "For the Grown-up": "Repair arc: a rupture is announcing itself, and the family's armor is denial — the house must be fine, because if it isn't, everything they've built on being fine comes into question. Kids often ARE the crack-spotters in real families; being told 'there's nothing there' when you can see the crack is its own hurt. This card pairs with Bruno's later."
+      },
+      "metadata": {
+        "lens": "repair",
+        "time": "20:00",
+        "movie": "Encanto"
+      }
+    },
+    {
+      "name": "Surface Pressure",
+      "category": "repair",
+      "keywords": [
+        "luisa",
+        "pressure",
+        "armor"
+      ],
+      "sections": {
+        "Wonder Together": "Luisa is the strongest person ever — and she's scared all the time. What do you think she's afraid will happen if she stops carrying everything?",
+        "For the Grown-up": "Strength as armor: Luisa believes she IS her usefulness, so rest feels like disappearing. Somatic pause for the couch: where does your body feel heavy when you think you HAVE to do something? Squeeze your shoulders up like carrying donkeys... then drop them. That drop is what Luisa doesn't let herself do."
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "Donkeys",
+              "reply": "She juggles donkeys for FUN! Look under the muscles for the real fear..."
+            },
+            {
+              "text": "That if she's not useful, she's nothing",
+              "reply": "YES. Her strength became her whole worth. That's heavy to carry — people deserve rest even when they're strong.",
+              "right": true
+            },
+            {
+              "text": "The dark",
+              "reply": "Not the dark — something inside her, about what would happen if she put the load down."
+            }
+          ],
+          "question": "What is Luisa really scared of?"
+        },
+        "time": "33:00",
+        "movie": "Encanto"
+      }
+    },
+    {
+      "name": "We Don't Talk About Bruno",
+      "category": "discussion",
+      "keywords": [
+        "bruno",
+        "scapegoat",
+        "blame"
+      ],
+      "sections": {
+        "Wonder Together": "Everyone sings about how scary Bruno was. Listen close: what did Bruno actually DO to each person?",
+        "For the Grown-up": "The most important card in this set — and there's a layer sharper than 'Bruno only predicted things.' Take the rain verse: Bruno told Pepa something, Pepa got upset, and PEPA'S own gift turns her feelings into real weather — SHE made the storm, not Bruno. The family remembers it as 'Bruno ruined the wedding with rain,' but the real chain is: Bruno spoke, Pepa felt something, Pepa's magic made it storm. Blaming the messenger erases who actually held the power in that moment — a small recursive twist inside the bigger scapegoat story. A family under pressure doesn't just misremember who caused something; it reaches for the easiest target instead of the harder, truer chain of cause and effect."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "Bruno — his vision made it happen",
+              "reply": "Close, but listen again. Bruno only SAW rain and said so out loud. Watch whose face changes right before the sky does..."
+            },
+            {
+              "text": "Pepa — her feelings turned into weather",
+              "reply": "YES! Pepa's gift is that her mood BECOMES the weather. Bruno spoke, Pepa felt upset, and PEPA made the storm. The family blamed the wrong person.",
+              "right": true
+            },
+            {
+              "text": "Nobody — it was already going to rain",
+              "reply": "This is Encanto — nothing 'just happens'! Watch Pepa's face the moment right before the clouds roll in."
+            }
+          ],
+          "question": "At Pepa's wedding, who actually made it rain?"
+        },
+        "time": "44:00",
+        "movie": "Encanto"
+      }
+    },
+    {
+      "name": "Bruno in the walls",
+      "category": "repair",
+      "keywords": [
+        "bruno",
+        "exile",
+        "love"
+      ],
+      "sections": {
+        "Wonder Together": "Bruno never really left. He's been living inside the walls this whole time — fixing cracks, eating dinner close by. Why do you think he stayed so near?",
+        "For the Grown-up": "The exile who never stopped loving the family that pushed him out. He even patches the cracks — the scapegoat quietly doing repair work from inside the walls. Worth saying plainly: he hid his last vision to PROTECT Mirabel, and got ten years of blame for it. Ask together: who might be a 'Bruno' in stories we know — blamed for the thing they tried to warn about?"
+      },
+      "metadata": {
+        "lens": "repair",
+        "time": "58:00",
+        "movie": "Encanto"
+      }
+    },
+    {
+      "name": "What Else Can I Do?",
+      "category": "discussion",
+      "keywords": [
+        "isabela",
+        "perfect",
+        "roles"
+      ],
+      "sections": {
+        "Wonder Together": "Isabela has always been perfect. Then she makes an ugly little cactus — and she LOVES it. What's the difference between being perfect and being real?",
+        "For the Grown-up": "The perfect-girl armor drops and what's underneath is bigger, wilder, more creative. Note WHO unlocks it: Mirabel, the sister she's been set against. When one family member steps out of their assigned role, it loosens everyone's. Lantern-vs-idol again in family form: perfect Isabela was an idol; real Isabela lights things up."
+      },
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "Cacti are trendier",
+              "reply": "It's not about fashion — it's about who CHOSE it."
+            },
+            {
+              "text": "It's the first thing she made that wasn't expected of her",
+              "reply": "YES. The roses were her job. The cactus was HER. Real beats perfect.",
+              "right": true
+            },
+            {
+              "text": "She doesn't — she's still upset",
+              "reply": "Watch her face! She's never had this much fun in her life."
+            }
+          ],
+          "question": "Why does Isabela like the cactus better than her perfect roses?"
+        },
+        "time": "1:10:00",
+        "movie": "Encanto"
+      }
+    },
+    {
+      "name": "The river — Abuela's story",
+      "category": "repair",
+      "keywords": [
+        "abuela",
+        "rupture",
+        "truth"
+      ],
+      "sections": {
+        "Wonder Together": "Abuela finally tells Mirabel what happened at the river long ago. Does knowing her story change how the house rules feel?",
+        "For the Grown-up": "The whole repair arc opens up: the ORIGINAL rupture was Abuela's — losing Pedro, home, everything, in one night. The miracle became armor: if the family is perfect and useful, we can never lose it all again. Every rule in the house grew from that terror. This is the truth + return step happening at once: Mirabel goes TO her, and Abuela finally says what broke. Grown-ups' inherited patterns have origins; knowing the origin doesn't excuse the pressure, but it changes what you're talking to — the hurt, not the armor."
+      },
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "Abuela is just strict for no reason",
+              "reply": "It looks that way from inside the house. But there was a night at a river..."
+            },
+            {
+              "text": "From the night Abuela lost everything — the rule is old fear wearing a crown",
+              "reply": "YES. Rupture → armor, a whole generation later. Same shape as Moana's dad and Elsa's gloves — a family-sized version.",
+              "right": true
+            },
+            {
+              "text": "The magic requires it",
+              "reply": "The candle never asked for perfection — watch what actually rebuilds the magic at the end."
+            }
+          ],
+          "question": "Where did the family's 'be perfect, be useful' rule come from?"
+        },
+        "time": "1:20:00",
+        "movie": "Encanto"
+      }
+    },
+    {
+      "name": "Rebuilding Casita — Bruno comes home",
+      "category": "repair",
+      "keywords": [
+        "restoration",
+        "rebuild",
+        "welcome"
+      ],
+      "sections": {
+        "Wonder Together": "The family rebuilds the house with their own hands — no magic. And Bruno gets his place at the table back. What makes the new house stronger than the old one?",
+        "For the Grown-up": "Restoration that re-equips: the new Casita is built on truth instead of performance — same as the Honmoon rebuilt by honest singing, same as Te Fiti handing Maui a new hook. And the specific repair to notice: the scapegoat is UN-scapegoated, out loud, in front of everyone. Closing couch question: if our family got to rebuild one rule from scratch, which one would we change?"
+      },
+      "metadata": {
+        "lens": "repair",
+        "time": "1:32:00",
+        "movie": "Encanto"
+      }
+    }
+  ]
+}
