@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Watch Club — Browse Scenes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+<style>
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:var(--sans); background:var(--bg); color:var(--ink); min-height:100vh; }
+  .topbar { border-bottom:1px solid var(--line); background:var(--surface); }
+  .topbar .in { max-width:960px; margin:0 auto; padding:14px 20px; display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  .topbar .brand { font-family:var(--serif-display); font-weight:700; font-size:19px; color:var(--ink); text-decoration:none; }
+  .topbar nav { margin-left:auto; display:flex; gap:16px; font-size:14px; }
+  .topbar nav a { color:var(--ink-soft); text-decoration:none; }
+  .topbar nav a.here { color:var(--gold); font-weight:600; }
+  .wrap { max-width:960px; margin:0 auto; padding:32px 20px 72px; }
+  h1 { font-family:var(--serif-display); font-weight:600; font-size:clamp(24px,5vw,34px); margin:0 0 6px; }
+  p.tag { color:var(--ink-soft); margin:0 0 20px; }
+  .controls { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:8px; }
+  select { background:var(--surface); color:var(--ink); border:1px solid var(--line-soft); border-radius:8px; padding:8px 12px; font-size:14px; }
+  .link-row { display:flex; gap:8px; align-items:center; margin:14px 0 22px; padding:14px 16px; background:var(--surface); border:1px solid var(--line); border-radius:12px; flex-wrap:wrap; }
+  .link-row input { flex:1; min-width:200px; background:var(--panel2); border:1px solid var(--line-soft); border-radius:8px; padding:8px 10px; font-size:13px; color:var(--ink); }
+  .link-row button { background:var(--gold); color:#fff; border:none; border-radius:8px; padding:8px 16px; font-weight:600; font-size:13px; cursor:pointer; }
+  .account-note { font-size:12px; color:var(--mut); width:100%; }
+  .account-note a { color:var(--gold); }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
+  .card { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:18px; box-shadow:var(--shadow-card); }
+  .card .badge { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:8px; }
+  .card .t { font-family:var(--serif-display); font-weight:600; font-size:16.5px; margin-bottom:8px; }
+  .card .kid { font-size:14px; color:var(--ink-soft); line-height:1.45; margin-bottom:12px; }
+  .card button { width:100%; background:var(--gold); color:#fff; border:none; border-radius:999px; padding:9px; font-weight:600; font-size:13.5px; cursor:pointer; }
+  .card button:hover { background:var(--gold-dark); }
+  .card button:disabled { background:var(--line-soft); color:var(--mut); cursor:not-allowed; }
+  .empty { color:var(--mut); font-size:14px; }
+  footer { margin-top:40px; border-top:1px solid var(--line); padding-top:16px; font-size:12.5px; color:var(--mut); }
+  footer a { color:var(--gold); }
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in">
+  <a class="brand" href="index.html">Family Watch Club</a>
+  <nav>
+    <a href="index.html">Harbor</a>
+    <a class="here" href="parents.html">Launchpad</a>
+    <a href="https://recursive.eco">recursive.eco</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+  <h1>Browse Scenes</h1>
+  <p class="tag">Pick a movie, pick a moment, jump straight to it in your own copy.</p>
+
+  <div class="controls">
+    <select id="movie"></select>
+    <select id="theme"></select>
+  </div>
+
+  <div class="link-row">
+    <span style="font-size:13px; white-space:nowrap;">Your link for this movie:</span>
+    <input type="text" id="watchUrl" placeholder="https://... where your family watches it" />
+    <button id="saveUrl">Save</button>
+    <span class="account-note" id="accountNote"></span>
+  </div>
+
+  <div class="cards" id="cards"></div>
+  <p class="empty" id="empty" style="display:none">Loading scenes…</p>
+
+  <footer>Screenshots taken with the extension's "Save this frame as an image" button can be
+    uploaded as any card's thumbnail from the <a href="https://flow.recursive.eco/create/dashboard/unified/new" target="_blank" rel="noopener">grammar editor</a>.
+    <a href="parents.html">Back to the Launchpad</a></footer>
+</div>
+
+<script>
+const GRAMMAR_IDS = {
+  "Moana": "2a0b8085-cdd3-4a0d-b7d7-8c07d880a366",
+  "Frozen": "4411c4f5-11e0-43c5-91be-bf248964dd6f",
+  "KPop Demon Hunters": "9e7e04bf-34ce-4e31-94ac-281589d0dd16"
+};
+const LENS_LABELS = { discussion: "Discussion", repair: "Repair Lens", legends: "Real Legends" };
+const ACCOUNT_API = "https://flow.recursive.eco/api/account/movie-links";
+
+let allItems = {};   // movie -> items[]
+let account = null;  // null = unknown, {} = signed out, {links} = signed in
+let currentMovie = null;
+
+function toSeconds(t) { return String(t).split(":").reduce((a, p) => a * 60 + Number(p), 0); }
+function linkKey(movie) { return movie.toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
+function localKey(movie) { return "fwc-watch-" + linkKey(movie); }
+
+function watchUrlFor(movie) {
+  if (account && account.links && account.links[linkKey(movie)]) return account.links[linkKey(movie)];
+  return localStorage.getItem(localKey(movie)) || "";
+}
+
+function saveWatchUrl(movie, url) {
+  localStorage.setItem(localKey(movie), url);
+  if (account) { // signed in — also save to account
+    fetch(ACCOUNT_API, {
+      method: "POST", credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ key: linkKey(movie), url: url || null })
+    }).then((r) => r.json()).then((d) => { if (d.movie_links) account.links = d.movie_links; }).catch(() => {});
+  }
+}
+
+// With a saved YouTube link, deep-link straight to the timestamp.
+function urlWithTimestamp(base, seconds) {
+  try {
+    const u = new URL(base);
+    if (/youtube\.com|youtu\.be/i.test(u.hostname)) {
+      u.searchParams.set("t", Math.floor(seconds) + "s");
+      return u.toString();
+    }
+  } catch (e) { /* not a valid URL — open as-is */ }
+  return base;
+}
+
+async function loadAccount() {
+  try {
+    const res = await fetch(ACCOUNT_API, { credentials: "include" });
+    if (res.ok) {
+      const d = await res.json();
+      account = { links: d.movie_links || {} };
+      document.getElementById("accountNote").textContent = "Saved to your recursive.eco account.";
+    } else {
+      account = null;
+      document.getElementById("accountNote").innerHTML = 'Saved on this device only — <a href="https://flow.recursive.eco" target="_blank" rel="noopener">sign in</a> to sync across devices.';
+    }
+  } catch (e) {
+    account = null;
+  }
+}
+
+async function loadMovie(movie) {
+  if (allItems[movie]) return allItems[movie];
+  const res = await fetch(`https://flow.recursive.eco/api/tarot-channel/decks/${GRAMMAR_IDS[movie]}`);
+  const d = await res.json();
+  const items = (d.cards || d.items || []).filter((it) => it.metadata && it.metadata.time);
+  items.sort((a, b) => toSeconds(a.metadata.time) - toSeconds(b.metadata.time));
+  allItems[movie] = items;
+  return items;
+}
+
+function renderThemeOptions(movie, items) {
+  const themes = [...new Set(items.map((it) => it.metadata.lens || "discussion"))];
+  const sel = document.getElementById("theme");
+  sel.innerHTML = "";
+  themes.forEach((t) => {
+    const opt = document.createElement("option");
+    opt.value = t; opt.textContent = LENS_LABELS[t] || t;
+    sel.appendChild(opt);
+  });
+}
+
+function render() {
+  const movie = document.getElementById("movie").value;
+  const theme = document.getElementById("theme").value;
+  const items = (allItems[movie] || []).filter((it) => (it.metadata.lens || "discussion") === theme);
+  const box = document.getElementById("cards");
+  const empty = document.getElementById("empty");
+  box.innerHTML = "";
+  const url = watchUrlFor(movie);
+  document.getElementById("watchUrl").value = url;
+
+  if (items.length === 0) { empty.style.display = "block"; empty.textContent = "No scenes for this theme yet."; return; }
+  empty.style.display = "none";
+
+  items.forEach((it) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    const badge = document.createElement("div"); badge.className = "badge"; badge.textContent = it.metadata.time;
+    const t = document.createElement("div"); t.className = "t"; t.textContent = it.name;
+    const kid = document.createElement("div"); kid.className = "kid";
+    kid.textContent = (it.sections && it.sections["Wonder Together"]) || "";
+    const btn = document.createElement("button");
+    if (url) {
+      btn.textContent = "▶ Watch this moment";
+      btn.addEventListener("click", () => window.open(urlWithTimestamp(url, toSeconds(it.metadata.time)), "_blank"));
+    } else {
+      btn.textContent = "Save your link above first";
+      btn.disabled = true;
+    }
+    card.append(badge, t, kid, btn);
+    box.appendChild(card);
+  });
+}
+
+async function onMovieChange() {
+  const movie = document.getElementById("movie").value;
+  currentMovie = movie;
+  document.getElementById("empty").style.display = "block";
+  document.getElementById("empty").textContent = "Loading scenes…";
+  const items = await loadMovie(movie);
+  renderThemeOptions(movie, items);
+  render();
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const movieSel = document.getElementById("movie");
+  Object.keys(GRAMMAR_IDS).forEach((m) => {
+    const opt = document.createElement("option"); opt.value = m; opt.textContent = m;
+    movieSel.appendChild(opt);
+  });
+  movieSel.addEventListener("change", onMovieChange);
+  document.getElementById("theme").addEventListener("change", render);
+  document.getElementById("saveUrl").addEventListener("click", () => {
+    saveWatchUrl(currentMovie, document.getElementById("watchUrl").value.trim());
+    render();
+  });
+  await loadAccount();
+  await onMovieChange();
+});
+</script>
+</body>
+</html>

@@ -194,6 +194,24 @@ async function importParsed(parsed, source) {
   $("time-result").textContent = `Imported ${label}${extra}.`;
 }
 
+async function grabFrame() {
+  const out = $("time-result");
+  out.textContent = "Capturing frame...";
+  try {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    const resp = await chrome.tabs.sendMessage(tab.id, { type: "mc-grab-frame" });
+    if (resp && resp.error) { out.textContent = resp.error; return; }
+    if (!resp || !resp.dataUrl) { out.textContent = "No playing video found on this tab."; return; }
+    const a = document.createElement("a");
+    a.href = resp.dataUrl;
+    a.download = `movie-scene_${fmt(resp.time).replace(/:/g, "-")}.png`;
+    a.click();
+    out.textContent = `Saved a frame at ${fmt(resp.time)}. Upload it as this card's image in the grammar editor (Create → the item → Image).`;
+  } catch (e) {
+    out.textContent = "No video found — is the movie tab active?";
+  }
+}
+
 function importFile() { $("file").click(); }
 
 function onFile(ev) {
@@ -266,6 +284,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
   $("theme").addEventListener("change", (e) => { settings.activeSetId = e.target.value; save(); render(); });
   $("grab").addEventListener("click", grabTime);
+  $("grabFrame").addEventListener("click", grabFrame);
   $("import").addEventListener("click", importFile);
   $("file").addEventListener("change", onFile);
   $("export").addEventListener("click", exportSet);

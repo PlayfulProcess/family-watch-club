@@ -62,12 +62,28 @@
     }
   }
 
-  // Let the popup ask for the current movie time
+  // Let the popup ask for the current movie time, or grab a frame as a still image
   try {
     chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       if (msg && msg.type === "mc-get-time") {
         const v = findVideo();
         sendResponse(v ? { time: v.currentTime } : {});
+        return false;
+      }
+      if (msg && msg.type === "mc-grab-frame") {
+        const v = findVideo();
+        if (!v) { sendResponse({}); return false; }
+        try {
+          const canvas = document.createElement("canvas");
+          canvas.width = v.videoWidth;
+          canvas.height = v.videoHeight;
+          canvas.getContext("2d").drawImage(v, 0, 0, canvas.width, canvas.height);
+          sendResponse({ time: v.currentTime, dataUrl: canvas.toDataURL("image/png") });
+        } catch (e) {
+          // Cross-origin/DRM-protected video taints the canvas — can't read pixels.
+          sendResponse({ time: v.currentTime, error: "This video can't be captured (protected content)." });
+        }
+        return false;
       }
       return false;
     });

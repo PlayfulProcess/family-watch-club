@@ -82,7 +82,8 @@
     </ol>
     <p class="small">Comes with companions for <strong>Moana</strong> (Discussion, Real Legends
       told at sea, Repair Lens), <strong>Frozen</strong>, and <strong>KPop Demon Hunters</strong>
-      (Discussion + Repair Lens each). Pick the movie and theme in the extension popup.
+      (Discussion + Repair Lens each). Pick the movie and theme in the extension popup. Use
+      "Save this frame as an image" while paused to grab a scene for a card's thumbnail.
       <a href="https://recursive.eco/pages/grammar-viewer.html?id=2a0b8085-cdd3-4a0d-b7d7-8c07d880a366">Preview
       the Moana cards</a> without the movie, or read them
       <a href="https://recursive.eco/view/2a0b8085-cdd3-4a0d-b7d7-8c07d880a366?kiosk">in kiosk mode</a>.</p>
@@ -91,11 +92,14 @@
   <section>
     <h2>2 &middot; Your movies <span class="out">&#8599; your own purchases</span></h2>
     <p>Paste the link to where <em>your family</em> bought or streams each film (YouTube,
-      Disney+, Netflix...). It is saved only in this browser — no accounts, nothing uploaded.
-      The WATCH button opens your copy; have the companion pinned and it takes over from there.</p>
+      Disney+, Netflix...). Saved on this device — and if you're
+      <a href="https://flow.recursive.eco" target="_blank" rel="noopener">signed in to recursive.eco</a>
+      in this browser, saved to your account too, so it follows you to another device. The WATCH
+      button opens your copy; have the companion pinned and it takes over from there.</p>
     <div id="movies"></div>
     <p class="small">These links are yours alone. The shared story materials never include
-      links to purchased content — only to official, public pages.</p>
+      links to purchased content — only to official, public pages.
+      <a href="cards.html">Browse every scene and jump straight to its moment &rarr;</a></p>
   </section>
 
   <section>
@@ -118,14 +122,46 @@
 <script>
   var MOVIES = ["Moana", "Frozen", "KPop Demon Hunters", "Encanto"];
   var box = document.getElementById("movies");
+  var ACCOUNT_API = "https://flow.recursive.eco/api/account/movie-links";
+  var signedIn = false;
+
+  fetch(ACCOUNT_API, { credentials: "include" }).then(function (res) {
+    signedIn = res.ok;
+    return res.ok ? res.json() : { movie_links: {} };
+  }).then(function (d) {
+    var links = d.movie_links || {};
+    MOVIES.forEach(function (m) {
+      var accountUrl = links[slug(m)];
+      if (accountUrl) {
+        localStorage.setItem("fwc-watch-" + slug(m), accountUrl);
+        var input = document.getElementById("input-" + slug(m));
+        if (input) input.value = accountUrl;
+      }
+    });
+  }).catch(function () {});
+
+  function slug(m) { return m.toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
+
+  function saveLink(m, url) {
+    localStorage.setItem("fwc-watch-" + slug(m), url);
+    if (signedIn) {
+      fetch(ACCOUNT_API, {
+        method: "POST", credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ key: slug(m), url: url || null })
+      }).catch(function () {});
+    }
+  }
+
   MOVIES.forEach(function (m) {
-    var key = "fwc-watch-" + m.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    var key = "fwc-watch-" + slug(m);
     var row = document.createElement("div"); row.className = "movie-row";
     var name = document.createElement("span"); name.className = "name"; name.textContent = m;
     var input = document.createElement("input");
+    input.id = "input-" + slug(m);
     input.placeholder = "https://... where your family watches " + m;
     input.value = localStorage.getItem(key) || "";
-    input.addEventListener("change", function () { localStorage.setItem(key, input.value.trim()); });
+    input.addEventListener("change", function () { saveLink(m, input.value.trim()); });
     var btn = document.createElement("button"); btn.textContent = "WATCH";
     btn.addEventListener("click", function () {
       var url = (localStorage.getItem(key) || input.value || "").trim();
