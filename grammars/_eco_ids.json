@@ -4,7 +4,13 @@
     "moana": "2a0b8085-cdd3-4a0d-b7d7-8c07d880a366",
     "frozen": "4411c4f5-11e0-43c5-91be-bf248964dd6f",
     "kpop-demon-hunters": "9e7e04bf-34ce-4e31-94ac-281589d0dd16",
-    "encanto": "90a7dfa0-831b-4716-8311-8eed711bdf84"
+    "encanto": "90a7dfa0-831b-4716-8311-8eed711bdf84",
+    "frozen-ii-movie-companion": "6971575f-5a4b-4c83-bdc3-2f42025a5e8e"
   },
-  "_public_now": ["moana", "frozen", "kpop-demon-hunters", "encanto"]
+  "_public_now": [
+    "moana",
+    "frozen",
+    "kpop-demon-hunters",
+    "encanto"
+  ]
 }
