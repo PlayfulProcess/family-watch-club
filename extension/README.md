@@ -25,8 +25,13 @@ bedtime storybook page instead.)
   These are traditional stories, over a thousand years old — not Disney text.
 - **The Repair Lens** — 7 pause points that follow one arc through the film:
   rupture → armor → truth → return → restoration. Same movie, deeper game.
+- **Frozen** — Discussion + Repair Lens sets (the gloves, the closed door,
+  and the act of true love as a repair arc).
+- **KPop Demon Hunters** — Discussion + Repair Lens sets (lantern vs idol,
+  protecting vs shaming patterns, truth sung out loud). Timestamps are rough
+  first drafts — verify with "Grab current movie time".
 
-Switch between sets in the extension popup.
+Pick the movie and theme in the extension popup.
 
 ## Quizzes
 

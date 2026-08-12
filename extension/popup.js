@@ -5,7 +5,11 @@ const $ = (id) => document.getElementById(id);
 let settings = { enabled: true, allCaps: true, offsetSeconds: 0, activeSetId: "moana" };
 let promptSets = {};
 
-const BUNDLED = ["prompts/moana.json", "prompts/moana-legends.json", "prompts/moana-repair.json"];
+const BUNDLED = [
+  "prompts/moana.json", "prompts/moana-legends.json", "prompts/moana-repair.json",
+  "prompts/frozen-discussion.json", "prompts/frozen-repair.json",
+  "prompts/kpop-demon-hunters-discussion.json", "prompts/kpop-demon-hunters-repair.json"
+];
 
 async function seedIfEmpty() {
   const data = await chrome.storage.local.get(["settings", "promptSets"]);

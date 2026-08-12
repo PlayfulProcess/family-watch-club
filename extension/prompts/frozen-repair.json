@@ -1,0 +1,88 @@
+{
+  "id": "frozen-repair",
+  "title": "Frozen — Repair Lens",
+  "movie": "Frozen",
+  "theme": "Repair Lens",
+  "version": 1,
+  "note": "Generated from grammars/frozen/grammar.json (the editable master on recursive.eco / in the repo). Timestamps approximate — use the nudge buttons.",
+  "points": [
+    {
+      "time": "12:00",
+      "title": "Do You Want to Build a Snowman?",
+      "kid": "Anna knocks and knocks for years. Why doesn't Elsa ever open the door?",
+      "parent": "Repair-arc reading: the closed door is armor, not rejection — Elsa believes staying away IS the loving thing. Both sisters are hurting on opposite sides of the same door, each thinking the other doesn't want them. Worth asking: has anyone ever seemed to shut you out when they were really protecting you?",
+      "quiz": {
+        "options": [
+          {
+            "text": "She doesn't love Anna anymore",
+            "reply": "She loves her the WHOLE time — watch her face on the other side of the door."
+          },
+          {
+            "text": "She's scared of hurting Anna again",
+            "reply": "YES. The door is armor around an old accident. Protection that outlived its moment — Moana's dad has the same rule about the reef.",
+            "right": true
+          },
+          {
+            "text": "She's too busy being queen",
+            "reply": "This is years before she's queen. It started the night of the accident."
+          }
+        ],
+        "question": "Why does Elsa keep the door closed?"
+      }
+    },
+    {
+      "time": "58:00",
+      "title": "Anna comes to the palace",
+      "kid": "Anna climbs a whole frozen mountain to reach her sister. What makes her keep going?",
+      "parent": "Repair-arc: this is the RETURN step — going toward the person instead of away. Notice it doesn't work yet: Anna returns, but leads with the problem (the frozen kingdom), and Elsa's armor slams down harder. Return alone isn't enough; the truth step hasn't happened yet. Real repairs often take more than one try.",
+      "quiz": {
+        "options": [
+          {
+            "text": "Anna doesn't really want to fix things",
+            "reply": "She climbed a MOUNTAIN for this. Wanting isn't the problem."
+          },
+          {
+            "text": "Elsa's fear rises faster than Anna's words can land",
+            "reply": "YES. When armor is threatened it strikes out — Elsa literally storms. You can't reason with armor; the hurt under it has to be spoken to. First tries at repair often fail. Keep watching.",
+            "right": true
+          },
+          {
+            "text": "The snowman interrupts them",
+            "reply": "Olaf is actually the most honest one on that mountain!"
+          }
+        ],
+        "question": "Anna reaches Elsa at last — why does it go wrong?"
+      }
+    },
+    {
+      "time": "1:25:00",
+      "title": "Anna's choice",
+      "kid": "Anna could run to her kiss and save herself. She turns toward Elsa instead. Why?",
+      "parent": "The whole repair arc lands here. Anna's act says the truth out loud better than words: you are worth standing in front of. And watch what it unlocks — Elsa finally learns the counter-rule to the one she was raised on: not conceal-don't-feel, but love as the thing that makes power safe. Repair that re-equips, exactly like Te Fiti restoring Maui's hook.",
+      "quiz": {
+        "options": [
+          {
+            "text": "A kiss from Hans",
+            "reply": "Ouch — the movie has other plans for Hans."
+          },
+          {
+            "text": "A kiss from Kristoff",
+            "reply": "Close guess — the movie WANTS you to think that. But Anna never reaches him..."
+          },
+          {
+            "text": "Anna putting herself between the sword and Elsa",
+            "reply": "YES. The act of true love isn't received — it's GIVEN, by the person we thought needed saving. Love turned outward, not a kiss arriving.",
+            "right": true
+          }
+        ],
+        "question": "What is the act of true love that saves the day?"
+      }
+    },
+    {
+      "time": "1:33:00",
+      "title": "The gates stay open",
+      "kid": "At the end, Elsa makes an ice rink for everyone and the gates stay open. What changed — her powers, or something else?",
+      "parent": "Her powers are identical in the first scene and the last. What changed is the rule she lives by — fear says conceal, love says connect. Master lesson, same as Moana's father: who you are is a choice, not a fixed thing, and the people around you can change their rules too. Closing couch question: is there a door in our family that could open a little more?"
+    }
+  ]
+}

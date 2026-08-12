@@ -1,0 +1,88 @@
+{
+  "id": "kpop-demon-hunters-repair",
+  "title": "KPop Demon Hunters — Repair Lens",
+  "movie": "KPop Demon Hunters",
+  "theme": "Repair Lens",
+  "version": 1,
+  "note": "Generated from grammars/kpop-demon-hunters/grammar.json (the editable master on recursive.eco / in the repo). Timestamps approximate — use the nudge buttons.",
+  "points": [
+    {
+      "time": "18:00",
+      "title": "Rumi's patterns",
+      "kid": "Rumi hides the marks on her skin from her best friends. What do you think hiding something that big feels like in the body?",
+      "parent": "The repair arc's rupture + armor in one image: the patterns are just TRUE — part of where she comes from — but she's been taught to read them as shameful. Same move as Elsa's gloves and Tui's reef rule. The distinction that matters for our kids: patterns we inherit come in two kinds — ones that protect (Honmoon-like) and ones that shame (Gwi-Ma-like) — and the skill is telling them apart.",
+      "quiz": {
+        "options": [
+          {
+            "text": "They're dangerous to touch",
+            "reply": "Nobody gets hurt by them — the danger is in what people might THINK."
+          },
+          {
+            "text": "She was taught they make her unlovable",
+            "reply": "YES. The patterns are just true — it's the shame story wrapped around them that hurts. Elsa's gloves are the same armor in another movie.",
+            "right": true
+          },
+          {
+            "text": "It's a fashion choice",
+            "reply": "If only! Watch how much energy the hiding costs her."
+          }
+        ],
+        "question": "Why does Rumi hide her patterns?"
+      }
+    },
+    {
+      "time": "50:00",
+      "title": "Rumi and Jinu",
+      "kid": "Jinu is supposed to be the enemy. What does Rumi see in him that nobody else sees?",
+      "parent": "The Moana-and-Te-Kā move: looking underneath the monster and finding a hurt person — Jinu carries an old bargain he made from desperation, and Gwi-Ma holds him with shame. Rumi can see it because she knows what hiding feels like. Careful family conversation: seeing the hurt under someone's armor doesn't mean excusing what they do — it means knowing what you're actually talking to.",
+      "quiz": {
+        "options": [
+          {
+            "text": "She has magic vision",
+            "reply": "No magic needed — something simpler and braver."
+          },
+          {
+            "text": "She knows what it's like to hide part of yourself",
+            "reply": "YES. Her secret lets her recognize his. The scary thing is a hurt thing — Te Kā all over again.",
+            "right": true
+          },
+          {
+            "text": "She doesn't — she's being tricked",
+            "reply": "There IS risk here — good instinct. But watch what her seeing eventually makes possible."
+          }
+        ],
+        "question": "Why can Rumi see past Jinu's demon side?"
+      }
+    },
+    {
+      "time": "1:10:00",
+      "title": "The secret comes out",
+      "kid": "Rumi's patterns are seen at the worst possible moment. What's the difference between a secret being TAKEN from you and a truth you choose to tell?",
+      "parent": "Truth arriving as exposure instead of confession — the armor ripped off rather than taken off. It's why this lands as catastrophe instead of relief. The repair arc says truth is the middle step, but HOW truth arrives matters. Worth naming for kids: telling your own truth early, to people you trust, is the gentle version of what happens here the hard way."
+    },
+    {
+      "time": "1:28:00",
+      "title": "Singing the truth",
+      "kid": "In the end, the barrier isn't rebuilt by hiding better — it's rebuilt by singing the truth out loud, patterns showing. Why is the true version STRONGER than the perfect version?",
+      "parent": "Full repair arc completed: rupture (the secret), armor (the hiding), truth (spoken — sung — at last), return (to her friends and the stage), restoration that re-equips (a barrier made of honesty instead of performance — stronger than the original, like Maui's new hook). In all three of our movies the hidden truth comes out as a song. Closing couch question: what's OUR family's version of singing it instead of hiding it?",
+      "quiz": {
+        "options": [
+          {
+            "text": "Hiding the patterns better than before",
+            "reply": "That was the OLD plan — the one that nearly broke everything."
+          },
+          {
+            "text": "Truth sung out loud, patterns and all",
+            "reply": "YES. Connection built on the real story is stronger than connection built on the perfect one. Repair that re-equips — the mended place outshines the unbroken one.",
+            "right": true
+          },
+          {
+            "text": "A bigger, louder concert",
+            "reply": "Volume isn't it — the Saja Boys were plenty loud. Listen for what's DIFFERENT about this song."
+          }
+        ],
+        "question": "What finally makes the protection strong again?"
+      }
+    }
+  ]
+}

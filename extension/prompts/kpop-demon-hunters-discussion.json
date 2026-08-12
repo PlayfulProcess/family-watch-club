@@ -1,0 +1,82 @@
+{
+  "id": "kpop-demon-hunters-discussion",
+  "title": "KPop Demon Hunters — Discussion",
+  "movie": "KPop Demon Hunters",
+  "theme": "Discussion",
+  "version": 1,
+  "note": "Generated from grammars/kpop-demon-hunters/grammar.json (the editable master on recursive.eco / in the repo). Timestamps approximate — use the nudge buttons.",
+  "points": [
+    {
+      "time": "6:00",
+      "title": "Huntrix on stage",
+      "kid": "The girls shine on stage AND fight demons in secret. Which job do you think is harder?",
+      "parent": "Set up the movie's central image early: their singing isn't just showbiz — the fans' real connection to them literally powers the Honmoon, the barrier that protects everyone. Shine that protects people = the lantern. Hold that thought for when the Saja Boys arrive with the other kind of shine.",
+      "quiz": {
+        "options": [
+          {
+            "text": "It's just entertainment",
+            "reply": "Look at the glowing barrier when the fans sing along..."
+          },
+          {
+            "text": "It powers the Honmoon — the barrier that keeps demons out",
+            "reply": "YES. Their art is protection. When people connect through their songs, everyone gets safer. That's shine used as a lantern.",
+            "right": true
+          },
+          {
+            "text": "It puts demons to sleep",
+            "reply": "Not sleep — it keeps them OUT, by keeping people connected."
+          }
+        ],
+        "question": "What does Huntrix's singing actually DO in this world?"
+      }
+    },
+    {
+      "time": "30:00",
+      "title": "The Saja Boys arrive",
+      "kid": "The Saja Boys are SO catchy and everyone loves them instantly. Can you feel the difference between their shine and Huntrix's shine?",
+      "parent": "Here's the idol trap made literal: the Saja Boys' shine is designed to make fans hand over their energy — to give up their paddle, not paddle harder. A lantern lights your way; an idol asks for your rowing. Fun family test for any star or influencer: after watching them, do you want to DO more, or just watch more?",
+      "quiz": {
+        "options": [
+          {
+            "text": "A lantern makes you paddle more; an idol takes your paddle",
+            "reply": "YES. Good heroes leave you stronger and more yourself. The Saja Boys' whole plan is to collect paddles.",
+            "right": true
+          },
+          {
+            "text": "Lanterns are brighter",
+            "reply": "Brightness isn't it — the Saja Boys are PLENTY bright. Look at what happens to the fans' energy."
+          },
+          {
+            "text": "There is no difference",
+            "reply": "The whole movie disagrees — watch what each kind of shine does to the people watching."
+          }
+        ],
+        "question": "What's the difference between a lantern and an idol?"
+      }
+    },
+    {
+      "time": "1:18:00",
+      "title": "Gwi-Ma's voice",
+      "kid": "Gwi-Ma doesn't fight with claws — he fights with a voice that tells people they're worthless. Have you ever heard a voice like that in your own head?",
+      "parent": "The most psychologically precise villain in any of our three movies: shame as literal fuel. Gwi-Ma's whispers only work on what people already fear about themselves. The somatic skill from our curriculum applies directly — the shaming voice FEELS different in the body than the protecting one. Ask: where do you feel it when a mean thought shows up? Naming the body-place shrinks the voice.",
+      "quiz": {
+        "options": [
+          {
+            "text": "It's very loud",
+            "reply": "It's usually a whisper. Loudness isn't the weapon..."
+          },
+          {
+            "text": "It repeats the fears people already carry",
+            "reply": "YES. He can only use what shame already put there. Which means every secret told to a trusted person is ammunition taken AWAY from him.",
+            "right": true
+          },
+          {
+            "text": "It can control anyone at any time",
+            "reply": "Watch who he CAN'T reach — people standing in their truth are terrible customers."
+          }
+        ],
+        "question": "What makes Gwi-Ma's voice powerful?"
+      }
+    }
+  ]
+}

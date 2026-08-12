@@ -1,0 +1,88 @@
+{
+  "id": "frozen-discussion",
+  "title": "Frozen — Discussion",
+  "movie": "Frozen",
+  "theme": "Discussion",
+  "version": 1,
+  "note": "Generated from grammars/frozen/grammar.json (the editable master on recursive.eco / in the repo). Timestamps approximate — use the nudge buttons.",
+  "points": [
+    {
+      "time": "6:00",
+      "title": "The trolls' warning",
+      "kid": "The trolls say the head can be persuaded, but the heart is harder. What do you think that means?",
+      "parent": "The whole movie is set up in this one line of folk wisdom. Notice what the grown-ups do with the warning: they erase Anna's memory and hide Elsa away — they treat a HEART problem with a HEAD solution. Watch how that works out.",
+      "quiz": {
+        "options": [
+          {
+            "text": "Help her practice them safely",
+            "reply": "That's what we might hope — but watch again. The gates close, the staff is reduced, the gloves go on..."
+          },
+          {
+            "text": "Hide them — gloves, closed gates, secrets",
+            "reply": "YES. They choose hiding over practicing. It comes from love AND fear at once — and it becomes the armor Elsa carries for the whole movie.",
+            "right": true
+          },
+          {
+            "text": "Send her away forever",
+            "reply": "No — they keep her home. But home becomes a kind of hiding place."
+          }
+        ],
+        "question": "What do the parents decide to do about Elsa's powers?"
+      }
+    },
+    {
+      "time": "23:00",
+      "title": "Love Is an Open Door",
+      "kid": "Anna wants to marry Hans the day she met him! What do you think about that?",
+      "parent": "The movie deliberately sets up the fairy-tale shortcut so it can question it later. A kid-sized way in: how long does it take to really know a friend? Anna has been lonely behind closed gates for years — the loneliness, not silliness, is what makes the shortcut tempting.",
+      "quiz": {
+        "options": [
+          {
+            "text": "Because Hans is definitely her true love",
+            "reply": "The movie has a BIG surprise about that. Keep watching..."
+          },
+          {
+            "text": "Because she's been lonely for so long",
+            "reply": "YES. Years of closed doors made an open door feel like everything. Loneliness can make us decide too fast.",
+            "right": true
+          },
+          {
+            "text": "Because the trolls told her to",
+            "reply": "The trolls aren't here — this one is all Anna."
+          }
+        ],
+        "question": "Why does Anna say yes so fast?"
+      }
+    },
+    {
+      "time": "32:00",
+      "title": "Let It Go",
+      "kid": "Elsa finally uses her powers and builds something beautiful. Is she free now, or alone — or both?",
+      "parent": "The trick of this scene: it FEELS like pure victory, and it's half of one. Elsa drops the armor of hiding — real progress — but swaps it for the armor of distance (a palace with no door handles, on a mountain, alone). Same tension as Moana's ocean and Rumi's stage: the truth is out, but connection still missing.",
+      "quiz": {
+        "options": [
+          {
+            "text": "Nothing — it's perfect",
+            "reply": "It IS beautiful. But count the people in it..."
+          },
+          {
+            "text": "Other people",
+            "reply": "YES. She traded hiding-among-people for shining-alone. Free AND lonely can be true at the same time.",
+            "right": true
+          },
+          {
+            "text": "More ice",
+            "reply": "There is definitely enough ice."
+          }
+        ],
+        "question": "Elsa builds an amazing ice palace. What's missing from it?"
+      }
+    },
+    {
+      "time": "1:12:00",
+      "title": "An act of true love",
+      "kid": "Only an act of true love can thaw a frozen heart. What counts as an act of true love?",
+      "parent": "Everyone in the movie — and most of us watching — assumes it means a kiss someone GIVES you. The ending flips it: the act of true love is one Anna DOES. Pause here and collect guesses; the wrong guesses are the fun part."
+    }
+  ]
+}

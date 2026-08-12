@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Movie Companion — Pause & Talk",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Pauses any movie at moments you choose and shows a discussion prompt. A family conversation layer for movie night.",
   "permissions": ["storage"],
   "host_permissions": [

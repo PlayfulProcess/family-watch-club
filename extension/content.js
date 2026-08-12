@@ -41,7 +41,11 @@
   // set has a newer "version" (so extension updates reach existing installs).
   async function seedIfEmpty() {
     let changed = false;
-    for (const path of ["prompts/moana.json", "prompts/moana-legends.json", "prompts/moana-repair.json"]) {
+    for (const path of [
+      "prompts/moana.json", "prompts/moana-legends.json", "prompts/moana-repair.json",
+      "prompts/frozen-discussion.json", "prompts/frozen-repair.json",
+      "prompts/kpop-demon-hunters-discussion.json", "prompts/kpop-demon-hunters-repair.json"
+    ]) {
       try {
         const res = await fetch(chrome.runtime.getURL(path));
         const set = await res.json();
