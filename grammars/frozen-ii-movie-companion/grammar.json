@@ -1,0 +1,218 @@
+{
+  "name": "Frozen II — Movie Companion",
+  "tags": [
+    "movie-companion",
+    "frozen-2",
+    "family-movie-night",
+    "emotional-intelligence",
+    "repair",
+    "parents"
+  ],
+  "items": [
+    {
+      "id": "1c1568b1-7a37-4c59-bdba-3dfe786602c1",
+      "name": "Into the Unknown",
+      "category": "discussion",
+      "keywords": ["call", "voice", "elsa"],
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "She's bored of being queen",
+              "reply": "Watch her face — she loves her people. This isn't boredom."
+            },
+            {
+              "text": "Something in her already knows it's calling her home",
+              "reply": "YES. Part of her has always sensed she's not just FROM Arendelle — the voice feels like a memory, not a stranger.",
+              "right": true
+            },
+            {
+              "text": "She has no choice",
+              "reply": "She has every choice. She chooses to go."
+            }
+          ],
+          "question": "Why does Elsa follow the voice even though everyone tells her not to?"
+        },
+        "time": "10:00",
+        "movie": "Frozen II"
+      },
+      "sections": {
+        "Wonder Together": "Elsa hears a voice nobody else can hear. Should she follow it, even though it might be dangerous?",
+        "For the Grown-up": "The sequel opens with a literal call to adventure — a voice only Elsa can hear, pulling her away from a peaceful, settled life. Worth naming: answering a call doesn't mean the old life was wrong. Sometimes peace is exactly what lets you finally hear the next question."
+      },
+      "sort_order": 0
+    },
+    {
+      "id": "430ef0f5-b2d8-4126-90e9-518efb44073b",
+      "name": "Lost in the Woods",
+      "category": "repair",
+      "keywords": ["kristoff", "insecurity", "identity"],
+      "metadata": {
+        "lens": "repair",
+        "time": "38:00",
+        "movie": "Frozen II"
+      },
+      "sections": {
+        "Wonder Together": "Kristoff wants to propose to Anna but keeps messing up the moment. Why do you think he's so nervous?",
+        "For the Grown-up": "A comic scene with a real hurt underneath: Kristoff feels like he doesn't matter as much once Anna's attention turns to her sister and the kingdom. Worth a gentle question for kids: has a friend ever seemed far away even when they were standing right next to you?"
+      },
+      "sort_order": 1
+    },
+    {
+      "id": "dea0343e-4034-42a6-908b-551e5ce8f990",
+      "name": "The truth about the dam",
+      "category": "repair",
+      "keywords": ["rupture", "northuldra", "history"],
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "Arendelle asked for too much magic",
+              "reply": "It wasn't about magic — it was about trust, and who broke it first."
+            },
+            {
+              "text": "Their king broke a peace agreement and betrayed the Northuldra",
+              "reply": "YES. The dam wasn't really a gift — it was built to weaken the forest people. That betrayal is the root of everything happening now.",
+              "right": true
+            },
+            {
+              "text": "Elsa's powers scared them",
+              "reply": "Elsa wasn't even born yet — this happened a whole generation earlier."
+            }
+          ],
+          "question": "Why did the forest spirits get angry at Arendelle long ago?"
+        },
+        "time": "1:00:00",
+        "movie": "Frozen II"
+      },
+      "sections": {
+        "Wonder Together": "Elsa and Anna learn their grandfather built the dam as a trick, and it hurt the Northuldra people. How does it feel to find out someone in your own family did something wrong?",
+        "For the Grown-up": "The film's real rupture, one generation removed: Grandfather Runeard betrayed the Northuldra under a fake peace offer. Same shape as Encanto's river and Moana's dad — an old harm becomes the root of everything that follows. The hard, honest move here for a family conversation: loving your family and admitting it did something wrong are not opposites."
+      },
+      "sort_order": 2
+    },
+    {
+      "id": "de1afeed-82ac-49e6-9946-0aee39bdd14b",
+      "name": "Show Yourself",
+      "category": "discussion",
+      "keywords": ["identity", "belonging", "fifth-spirit"],
+      "metadata": {
+        "lens": "discussion",
+        "quiz": {
+          "options": [
+            {
+              "text": "A mistake nature made",
+              "reply": "The opposite — watch what the spirits do when they finally see her clearly."
+            },
+            {
+              "text": "The bridge between people and nature the prophecy was about",
+              "reply": "YES! She was never too much — she was exactly the missing piece, all along.",
+              "right": true
+            },
+            {
+              "text": "A regular queen with a nice singing voice",
+              "reply": "There is SO much more going on — keep watching!"
+            }
+          ],
+          "question": "What does Elsa discover she actually is?"
+        },
+        "time": "1:15:00",
+        "movie": "Frozen II"
+      },
+      "sections": {
+        "Wonder Together": "Elsa finds out who she really is and where her powers come from. Does knowing WHERE you're from change WHO you are?",
+        "For the Grown-up": "The identity question the whole film has been building to — Elsa isn't an anomaly, she's the bridge the two peoples always needed. A gentle note: the movie's answer is that belonging isn't chosen once, it can expand. You can be fully of one place AND discover you're also of another."
+      },
+      "sort_order": 3
+    },
+    {
+      "id": "7df3f763-8baa-4c33-b687-e7d55a5c698e",
+      "name": "The Next Right Thing",
+      "category": "repair",
+      "keywords": ["anna", "grief", "small-steps"],
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "Waits for someone to save her",
+              "reply": "Nobody's coming in this scene — she has to move herself."
+            },
+            {
+              "text": "Just the next small right thing, one step at a time",
+              "reply": "YES. Not the whole plan — just one true step. That's often enough to start.",
+              "right": true
+            },
+            {
+              "text": "Gives up completely",
+              "reply": "She's tempted to — but watch what she chooses instead."
+            }
+          ],
+          "question": "When Anna feels like giving up, what does she do?"
+        },
+        "time": "1:24:00",
+        "movie": "Frozen II"
+      },
+      "sections": {
+        "Wonder Together": "Anna feels like everything is lost and she doesn't know what to do. What's the smallest thing she decides to do next?",
+        "For the Grown-up": "Possibly the most quietly important song in either film: when everything feels too big, Anna doesn't solve it all at once — she gets up, and does the next right thing. A genuinely useful tool to name for kids (and ourselves): when overwhelmed, you don't need the whole plan, just the next step."
+      },
+      "sort_order": 4
+    },
+    {
+      "id": "7b763687-e04d-441b-8af5-48fa4f65e4c5",
+      "name": "Breaking the dam, rebuilding trust",
+      "category": "repair",
+      "keywords": ["restoration", "repair", "truth"],
+      "metadata": {
+        "lens": "repair",
+        "quiz": {
+          "options": [
+            {
+              "text": "It doesn't — it's just brave",
+              "reply": "It IS brave — but it's also exactly what repairs the old wrong."
+            },
+            {
+              "text": "It undoes the original broken promise to the forest",
+              "reply": "YES. Real repair sometimes means giving something up, not just saying sorry. The water finds its true path again.",
+              "right": true
+            },
+            {
+              "text": "It makes Elsa more powerful",
+              "reply": "This choice is Anna's, and it's not about power — it's about making things right."
+            }
+          ],
+          "question": "Why does breaking the dam actually help, even though it seems risky?"
+        },
+        "time": "1:32:00",
+        "movie": "Frozen II"
+      },
+      "sections": {
+        "Wonder Together": "Anna decides to break the dam — even though it might flood her own kingdom. Why is that the right choice?",
+        "For the Grown-up": "Restoration that costs something real: repairing the old harm means giving up the thing built on top of it, even though it's now home. This is repair with teeth, not just words — the family (and kingdom) has to actually undo the broken thing, not merely apologize for it. Arendelle survives; it's rebuilt on honesty instead of a lie."
+      },
+      "sort_order": 5
+    },
+    {
+      "id": "2fd1200a-9a62-4f7d-8d61-500cf0f55969",
+      "name": "Two homes, one family",
+      "category": "discussion",
+      "keywords": ["ending", "roles", "change"],
+      "metadata": {
+        "lens": "discussion",
+        "time": "1:38:00",
+        "movie": "Frozen II"
+      },
+      "sections": {
+        "Wonder Together": "Elsa becomes the forest's guardian and Anna becomes queen of Arendelle — different homes, still one family. What do you think keeps them close?",
+        "For the Grown-up": "The ending refuses the idea that growing into who you are means leaving people behind. Elsa expands outward; Anna steps into new responsibility; both stay reachable to each other. A nice closing question: is there a role in OUR family that might be ready to change?"
+      },
+      "sort_order": 6
+    }
+  ],
+  "description": "Pause-and-talk cards for family movie night with Frozen II (2019). Each item is one pause point: a Wonder Together question for the kid, a For the Grown-up note, and an optional tap-quiz (metadata.quiz). metadata.time is where it fires (approximate — use the extension's nudge buttons); metadata.lens is \"discussion\" or \"repair\" (rupture → armor → truth → return → restoration). Our own commentary and questions only — no film dialogue, lyrics, or studio artwork. Part of the Family Watch Club (watch.recursive.eco).",
+  "grammar_type": "custom",
+  "is_published": true
+}
