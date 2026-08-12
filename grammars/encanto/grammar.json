@@ -50,7 +50,9 @@
         },
         "time": "9:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "de0a614e-e162-433e-b3bc-0317cf176cd9",
+      "sort_order": 0
     },
     {
       "name": "The cracks appear",
@@ -68,7 +70,9 @@
         "lens": "repair",
         "time": "20:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "8447dff8-9eb0-4ae7-9b61-ab5c02e8a347",
+      "sort_order": 1
     },
     {
       "name": "Surface Pressure",
@@ -104,7 +108,9 @@
         },
         "time": "33:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "52d2fb64-fe46-4e3f-99c1-d656a69946d3",
+      "sort_order": 2
     },
     {
       "name": "We Don't Talk About Bruno",
@@ -140,7 +146,9 @@
         },
         "time": "44:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "46cef40f-ef3c-4898-84a2-fb25e87da3f2",
+      "sort_order": 3
     },
     {
       "name": "Bruno in the walls",
@@ -158,7 +166,9 @@
         "lens": "repair",
         "time": "58:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "a481eb58-1610-453c-a4d5-dca477e879f9",
+      "sort_order": 4
     },
     {
       "name": "What Else Can I Do?",
@@ -194,7 +204,9 @@
         },
         "time": "1:10:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "995b350d-558e-4fa4-9e66-32f0d3f84553",
+      "sort_order": 5
     },
     {
       "name": "The river — Abuela's story",
@@ -230,7 +242,9 @@
         },
         "time": "1:20:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "eddc37bf-2db5-42c3-b9a4-308bb9b5bb49",
+      "sort_order": 6
     },
     {
       "name": "Rebuilding Casita — Bruno comes home",
@@ -248,7 +262,12 @@
         "lens": "repair",
         "time": "1:32:00",
         "movie": "Encanto"
-      }
+      },
+      "id": "ddb4fd1a-fa67-4203-99d7-d182bf5ccab0",
+      "sort_order": 7
     }
-  ]
+  ],
+  "is_published": true,
+  "_recursive_eco_url": "https://flow.recursive.eco/g/90a7dfa0-831b-4716-8311-8eed711bdf84?view=reading",
+  "_recursive_eco_edit_url": "https://flow.recursive.eco/create/dashboard/unified/new?id=90a7dfa0-831b-4716-8311-8eed711bdf84"
 }
