@@ -34,5 +34,11 @@ studio artwork — ever.**
 
 ## Licenses
 
-- Content (questions, commentary, retellings, grammars): CC-BY-SA-4.0, PlayfulProcess.
-- Extension code: see `extension/`.
+- Code (the site pages `*.html` and `theme.css`, the browser extension's code in `extension/`
+  and its packaged build `movie-companion.zip`): Apache-2.0, PlayfulProcess — see `LICENSE`
+  and `NOTICE`.
+- Content (questions, commentary, retellings, grammars — `grammars/` and the prompts in
+  `extension/prompts/`): CC-BY-SA-4.0, PlayfulProcess — see `LICENSE-CONTENT.txt`. The films
+  themselves, their titles and characters belong to their owners and are not licensed here.
+- The names "recursive.eco" and "Recursive", and the spiral logo: not licensed — see
+  `TRADEMARKS.md`.
